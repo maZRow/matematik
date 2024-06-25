@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"  class="no-js">
+<head>
+
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="goto.js"></script>
+<script type="text/javascript" src="showHide.js"></script>
+
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+
+
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='jquery-smooth-scroll-css' href='./style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css' href='./style2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css' href='./style3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css' href='./style4.css' type='text/css' media='all' />
+
+
+</style>	<style type="text/css" id="twentyfifteen-header-css">
+			.site-header {
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
+
+		.site-branding {
+			min-height: 42px;
+		}
+
+		@media screen and (min-width: 46.25em) {
+			.site-header {
+				padding-top: 21px;
+				padding-bottom: 21px;
+			}
+			.site-branding {
+				min-height: 56px;
+			}
+		}
+		@media screen and (min-width: 55em) {
+			.site-header {
+				padding-top: 25px;
+				padding-bottom: 25px;
+			}
+			.site-branding {
+				min-height: 62px;
+			}
+		}
+		@media screen and (min-width: 59.6875em) {
+			.site-header {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			.site-branding {
+				min-height: 0;
+			}
+		}
+			.site-title,
+		.site-description {
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute;
+		}
+		</style>
+	<link rel="icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" sizes="32x32" />
+<link rel="icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" />
+<meta name="msapplication-TileImage" content="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" />
+        </head>
+
+
+<body data-rsssl=1 class="post-template-default single single-post postid-46 single-format-standard wp-custom-logo">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content"></a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<a href="./index.html" class="custom-logo-link" rel="home"><img width="248" height="248" src="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" class="custom-logo" alt="Математика с нуля" decoding="async" fetchpriority="high" srcset="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png 248w, http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png 150w" sizes="(max-width: 248px) 100vw, 248px" /></a>						<p class="site-title"><a href="" rel="home"></a></p>
+											<p class="site-description"></p>
+									<button class="secondary-toggle"></button>
+			</div>
+		</header>
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-samoe-glavnoe-menyu-container"><ul id="menu-samoe-glavnoe-menyu" class="nav-menu">
+					<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-44"><a href="./chisla.html">Шаг 1. Числа</a></li>
+                            <li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-48"><a href="./osnovnie_operacii.html">Шаг 2. Основные операции</a></li>
+                            <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-79"><a href="./virajeniya.html">Шаг 3. Выражения</a></li>
+                            <li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-142"><a href="./preobrazovanie_virajeniy.html">Шаг 4. Замены в выражениях</a></li>
+                            <li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-154"><a href="./razryadi_dlya_nachinayushix.html">Шаг 5. Разряды для начинающих</a></li>
+                            <li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-228"><a href="./umnojenie.html">Шаг 6. Умножение</a></li>
+                            <li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-502"><a href="./delenie.html">Шаг 7. Деление</a></li>
+                            <li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-102"><a href="./poryadok_deistviy.html">Шаг 8. Порядок действий</a></li>
+                            <li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-107"><a href="./zakoni_matematiki.html">Шаг 9. Законы математики</a></li>
+                            <li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-773"><a href="./deliteli_i_kratnie.html">Шаг 10. Делители и кратные</a></li>
+                            <li id="menu-item-799" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-799"><a href="./nod_i_nok.html">Шаг 11. НОД и НОК</a></li>
+                            <li id="menu-item-828" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-828"><a href="./drobi.html">Шаг 12. Дроби</a></li>
+                            <li id="menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-865"><a href="./deistviya_s_drobyami.html">Шаг 13. Действия с дробями</a></li>
+                            <li id="menu-item-1093" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1093"><a href="./smeshanie_chisla.html">Шаг 14. Смешанные числа</a></li>
+                            <li id="menu-item-1322" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1322"><a href="./sravnenie_drobey.html">Шаг 15. Сравнение дробей</a></li>
+                            <li id="menu-item-1432" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1432"><a href="./edinici_izmereniya.html">Шаг 16. Единицы измерения</a></li>
+                            <li id="menu-item-1507" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1507"><a href="./primenenie_drobey.html">Шаг 17. Применение дробей</a></li>
+                            <li id="menu-item-1643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1643"><a href="./desyatichnie_drobi.html">Шаг 18. Десятичные дроби</a></li>
+                            <li id="menu-item-1792" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1792"><a href="./deystviya_s_desyatichnimi_drobyami.html">Шаг 19. Действия с десятичными дробями</a></li>
+                            <li id="menu-item-2046" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2046"><a href="./primenenie_desyatichnix_drobey.html">Шаг 20. Применение десятичных дробей</a></li>
+                            <li id="menu-item-2129" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2129"><a href="./okruglenie_chisel.html">Шаг 21. Округление чисел</a></li>
+                            <li id="menu-item-2217" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2217"><a href="./periodicheskie_drobi.html">Шаг 22. Периодические дроби</a></li>
+                            <li id="menu-item-2245" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2245"><a href="./perevod_edinic.html">Шаг 23. Перевод единиц</a></li>
+                            <li id="menu-item-2268" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2268"><a href="./sootnosheniya.html">Шаг 24. Соотношения</a></li>
+                            <li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2316"><a href="./proporciya.html">Шаг 25. Пропорция</a></li>
+                            <li id="menu-item-2349" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2349"><a href="./rasstoyanie_scorost_vremya.html">Шаг 26. Расстояние, скорость, время</a></li>
+                            <li id="menu-item-2373" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2373"><a href="./pryamaya_proporcionalnost.html">Шаг 27. Прямая и обратная пропорциональность</a></li>
+                            <li id="menu-item-2392" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2392"><a href="./procenti.html">Шаг 28. Проценты</a></li>
+                            <li id="menu-item-2435" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2435"><a href="./otricatelnie_chisla.html">Шаг 29. Отрицательные числа</a></li>
+                            <li id="menu-item-2475" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2475"><a href="./modul_chisla.html">Шаг 30. Модуль числа</a></li>
+                            <li id="menu-item-2509" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2509"><a href="./chto_takoe_mnojestvo.html">Шаг 31. Что такое множество?</a></li>
+                            <li id="menu-item-2597" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2597"><a href="./slozhenie_i_vychitanie_celyh_chisel.html">Шаг 32. Сложение и вычитание целых чисел</a></li>
+                            <li id="menu-item-2745" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2745"><a href="./umnozhenie-i-delenie-tselyh-chisel.html>">Шаг 33. Умножение и деление целых чисел</a></li>
+                            <li id="menu-item-3147" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3147"><a href="./ratsionalnye-chisla.html">Шаг 34. Рациональные числа</a></li>
+                            <li id="menu-item-3391" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3391"><a href="./sravnenie-ratsionalnyh-chisel.html">Шаг 35. Сравнение рациональных чисел</a></li>
+                            <li id="menu-item-3464" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3464"><a href="./slozhenie_i_vychitanie-racionalnyh_chisel.html">Шаг 36. Сложение и вычитание рациональных чисел</a></li>
+                            <li id="menu-item-4044" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4044"><a href="./umnozhenie-i-delenie-ratsionalnyh-chisel.html">Шаг 37. Умножение и деление рациональных чисел</a></li>
+                            <li id="menu-item-4139" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4139"><a href="./dopolnitelnye-svedeniya-o-drobyah.html">Шаг 38. Дополнительные сведения о дробях</a></li>
+                            <li id="menu-item-5035" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5035"><a href="./bukvennye-vyrazheniya.html">Шаг 39. Буквенные выражения</a></li>
+                            <li id="menu-item-5175" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5175"><a href="./vynesenie-obshhego-mnozhitelya-za-skobki.html">Шаг 40. Вынесение общего множителя за скобки</a></li>
+                            <li id="menu-item-5176" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5176"><a href="./raskrytie-skobok.html">Шаг 41. Раскрытие скобок</a></li>
+                            <li id="menu-item-5636" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5636"><a href="./prostejshie-zadachi-po-matematike.html">Шаг 42. Простейшие задачи по математике</a></li>
+                            <li id="menu-item-5637" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5637"><a href="./zadachi-na-drobi.html">Шаг 43. Задачи на дроби</a></li>
+                            <li id="menu-item-5638" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5638"><a href="./zadachi-na-protsenty.html">Шаг 44. Задачи на проценты</a></li>
+                            <li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5639"><a href="./zadachi-na-dvizhenie.html">Шаг 45. Задачи на движение</a></li>
+                            <li id="menu-item-5640" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5640"><a href="./proizvoditelnost.html">Шаг 46. Производительность</a></li>
+                            <li id="menu-item-5641" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5641"><a href="./elementy-statistiki.html">Шаг 47. Элементы статистики</a></li>
+                            <li id="menu-item-7737" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7737"><a href="./obshhie-svedeniya-ob-uravneniyah.html">Шаг 48. Общие сведения об уравнениях</a></li>
+                            <li id="menu-item-7752" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7752"><a href="./reshenie-zadach-s-pomoshhyu-uravnenij.html">Шаг 49. Решение задач с помощью уравнений</a></li>
+                            <li id="menu-item-7760" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7760"><a href="./reshenie-zadach-s-pomoshhyu-proportsii.html">Шаг 50. Решение задач с помощью пропорции</a></li>
+                            <li id="menu-item-7761" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7761"><a href="./sistemy-linejnyh-uravnenij.html">Шаг 51. Системы линейных уравнений</a></li>
+                            <li id="menu-item-8777" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8777"><a href="./obshhie-svedeniya-o-neravenstvah.html">Шаг 52. Общие сведения о неравенствах</a></li>
+                            <li id="menu-item-8848" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8848"><a href="./sistemy-linejnyh-neravenstv-s-odnoj-peremennoj.html">Шаг 53. Системы линейных неравенств с одной переменной</a></li>
+                            <li id="menu-item-8852" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8852"><a href="./operatsii-nad-mnozhestvami.html">Шаг 54. Операции над множествами</a></li>
+                            <li id="menu-item-9929" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9929"><a href="./stepen-s-naturalnym-pokazatelem.html">Шаг 55. Степень с натуральным показателем</a></li>
+                            <li id="menu-item-9956" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9956"><a href="./stepen-s-tselym-pokazatelem.html">Шаг 56. Степень с целым показателем</a></li>
+                            <li id="menu-item-9965" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9965"><a href="./perimetr-ploshhad-i-obyom.html">Шаг 57. Периметр, площадь и объём</a></li>
+                            <li id="menu-item-10019" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10019"><a href="./odnochleny.html">Шаг 58. Одночлены</a></li>
+                            <li id="menu-item-10538" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10538"><a href="./mnogochleny.html">Шаг 59. Многочлены</a></li>
+                            <li id="menu-item-10539" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10539"><a href="./formuly-sokrashhennogo-umnozheniya.html">Шаг 60. Формулы сокращённого умножения</a></li>
+                            <li id="menu-item-10540" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10540"><a href="./razlozhenie-mnogochlena-na-mnozhiteli.html">Шаг 61. Разложение многочлена на множители</a></li>
+                            <li id="menu-item-10541" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10541"><a href="./delenie-mnogochlenov.html">Шаг 62. Деление многочленов</a></li>
+                            <li id="menu-item-10542" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10542"><a href="./tozhdestvennye-preobrazovaniya-mnogochlenov.html">Шаг 63. Тождественные преобразования многочленов</a></li>
+                            <li id="menu-item-11033" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11033"><a href="./kvadratnyj-koren.html">Шаг 64. Квадратный корень</a></li>
+                            <li id="menu-item-11041" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11041"><a href="./algoritm-izvlecheniya-kvadratnogo-kornya.html">Шаг 65. Алгоритм извлечения квадратного корня</a></li>
+                            <li id="menu-item-11548" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11548"><a href="./kvadratnoe-uravnenie.html">Шаг 66. Квадратное уравнение</a></li>
+                            <li id="menu-item-11578" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11578"><a href="./kvadratnoe-uravnenie-s-chyotnym-vtorym-koeffitsientom.html">Шаг 67. Квадратное уравнение с чётным вторым коэффициентом</a></li>
+                            <li id="menu-item-11651" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11651"><a href="./teorema-vieta.html">Шаг 68. Теорема Виета</a></li>
+                            <li id="menu-item-11845" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11845"><a href="./razlozhenie-kvadratnogo-tryohchlena-na-mnozhiteli.html">Шаг 69. Разложение квадратного трёхчлена на множители</a></li>
+                            <li id="menu-item-12274" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12274"><a href="./obobshhyonnoe-ponyatie-modulya-chisla.html">Шаг 70. Обобщённое понятие модуля числа</a></li>
+                            <li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="./uravnenie-s-modulem.html">Шаг 71. Уравнение с модулем</a></li>
+                            <li id="menu-item-12671" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12671"><a href="./reshenie-uravnenij-s-modulem-metodom-intervalov.html">Шаг 72. Решение уравнений с модулем методом интервалов</a></li>
+                            <li id="menu-item-12847" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12847"><a href="./neravenstva-s-modulem.html">Шаг 73. Неравенства с модулем</a></li>
+                            <li id="menu-item-12866" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12866"><a href="./reshenie-neravenstv-s-modulem-metodom-intervalov.html">Шаг 74. Решение неравенств с модулем методом интервалов</a></li>
+                            <li id="menu-item-12915" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12915"><a href="./izvlechenie-kvadratnogo-kornya-iz-obeih-chastej-uravneniya.html">Шаг 75. Извлечение квадратного корня из обеих частей уравнения</a></li>
+</ul></div>			</nav>
+		
+		
+		
+	</div>
+
+	</div>
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-46" class="post-46 post type-post status-publish format-standard hentry category-bez-rubriki">
+	
+	
+	<header class="entry-header">
+      
+      
+      <div style="margin-bottom:40px; margin-top:0; "> 
+        
+
+</script>
+    </div>
+
+	
+	
+	
+		<h1 class="entry-title">Основные операции</h1>      
+
+      
+	</header>
+
+	<div class="entry-content">
+		<p>Основные операции, которые используются в математике это сложение, вычитание, умножение и деление.</p>
+<p>Помимо этих операций существуют ещё и операции отношения такие как: равно (=), больше (&gt;), меньше (&lt;), больше или равно (≥), меньше или равно (≤), не равно (≠).</p>
+<p>Вообще, операции можно разделить на два вида:</p>
+<ol>
+<li>операции действия;</li>
+<li>операции отношения.</li>
+</ol>
+<p>Операции действия это:</p>
+<ul>
+<li>сложение (+)</li>
+<li>вычитание (-)</li>
+<li>умножение (×)</li>
+<li>деление ( ÷ ).</li>
+</ul>
+<p>Операции отношения это:</p>
+<ul>
+<li>равно (=)</li>
+<li>больше (&gt;)</li>
+<li>меньше (&lt;)</li>
+<li>больше или равно (≥)</li>
+<li>меньше или равно (≤)</li>
+<li>не равно (≠).</li>
+</ul>
+<nav id="menu"><b>Содержание урока</b></p>
+<ul class="navless">
+<li><a href="#yak1">Операции отношения</a></li>
+<li><a href="#yak2">Операция сложения</a></li>
+<li><a href="#yak3">Операция вычитания</a></li>
+<li><a href="#yak4">Операция умножения</a></li>
+<li><a href="#yak5">Операция деления</a></li>
+<li><a href="#yak6">Задания для самостоятельного решения</a></li>
+</ul>
+</nav>
+<h2 id="yak1" style="text-align: center;"><strong>Операции отношения</strong></h2>
+<p>Начнем с операций отношения. Слово &#171;отношение&#187; говорит само за себя. Примеры из жизни: что-то имеет отношение к чему-то. Папа имеет отношение к маме. Это отношение называют браком:<img decoding="async" class="aligncenter wp-image-2894 size-full" title="Брак" src="./otnoshenie-brak.jpg" alt="отношение брак" width="399" height="232" srcset="./otnoshenie-brak.jpg 399w, ./otnoshenie-brak.jpg 300w" sizes="(max-width: 399px) 100vw, 399px" /></p>
+<p>Примеров отношений множество. Можно сказать, что наш красивый мир, который развивается гармонично, тоже состоит из отношений.</p>
+<p>Если пятёрка больше тройки, то мы говорим, что <span style="color: #000000;"><em>&#171;пятерка больше по отношению к тройке&#187;</em></span> и записываем как <span style="color: #000000;">5 &gt; 3</span> (читается: <span style="color: #000000;"><em>пять больше, чем три)</em></span>. Острый угол знака отношения должен быть направлен в сторону меньшего числá. В данном примере число 3 меньше, чем число 5, поэтому острый угол знака отношения направлен в сторону числа 3.</p>
+<p>Ещё пример. Число 11 меньше, чем число 15. Эту фразу можно записать так:</p>
+<p style="text-align: center;"><span style="color: #000000;">11 &lt; 15</span></p>
+<p>В математике с помощью отношений можно записывать законы, формулы, уравнения и функции. Можно записать, что одно выражение равно другому, либо какое-то действие недопустимо по отношению к какому-нибудь объекту, числу, закону.</p>
+<p>Например, знаменитая фраза <span style="color: #000000;"><em>&#171;на ноль делить нельзя&#187;</em></span> записывается так:</p>
+<p><img decoding="async" class="aligncenter wp-image-2898 size-full" title="на ноль делить нельзя" src="./na-nol-delit-nelzja.png" alt="на ноль делить нельзя" width="149" height="49" /></p>
+<p>Не будем опережать события и забегать вперёд. Просто скажем, что в этом выражении вместо <span style="color: #000000;"><i>a </i></span>и<i><span style="color: #000000;"> b</span> </i>могут стоять любые числа. Но потом говорится, что <span style="color: #000000;"><em>b</em></span> не должно быть равным нулю.</p>
+<p>Знак равенства = стáвится между величинами и говорит о том, что эти величины равны между собой.</p>
+<p>Например, &#171;<span style="color: #000000;"><em>пять равно пять&#187;</em></span> записывается как <span style="color: #000000;">5 = 5</span>. Понятно, что две пятерки равны между собой. Помимо привычных для нас чисел, знáком равенства могут соединяться более сложные выражения, например: <span style="color: #000000;"><em>9 + x + y = 4 + 5 + x + y</em></span>.</p>
+<p>Ещё пример: если один большой арбуз весит 20 кг, а два маленьких арбуза весят по 10 кг каждый, то между арбузом в 20 кг и двумя арбузами по 10 кг можно поставить знак равенства. Это отношение можно прочитать так: <em><span style="color: #000000;">&#171;один арбуз весом в 20 килограмм</span> <strong>равен</strong> весу двух арбузов, каждый из которых весит 10 кг&#187;</em>. Ведь 20 кг <strong>= </strong>10 кг + 10 кг.</p>
+<p><img decoding="async" class="aligncenter wp-image-2899 size-full" title="равенство между арбузами" src="./ravenstvo-mezhdu-arbuzami.png" alt="равенство между арбузами" width="449" height="181" srcset="./ravenstvo-mezhdu-arbuzami.png 449w, ./ravenstvo-mezhdu-arbuzami.png 300w" sizes="(max-width: 449px) 100vw, 449px" /></p>
+<p>&nbsp;</p>
+<p>Знак не равно ≠ ставится между величинами тогда, когда они не равны между собой.</p>
+<p>Например, <span style="color: #000000;">5 ≠ 7</span>. Ясно, что пятёрка не равна семёрке. Ещё примеры: <span style="color: #000000;"><em>отличник не равен двоечнику, собака не равна кошке, мандарин это не апельсин</em></span>:</p>
+<p style="text-align: center;"><span style="color: #000000;"><em>отличник  ≠  двоечник</em></span></p>
+<p style="text-align: center;"><span style="color: #000000;"><em>собака  ≠  кошка</em></span></p>
+<p style="text-align: center;"><span style="color: #000000;"><em>мандарин  ≠  апельсин</em></span></p>
+<p>Вы можете осмотреться вокруг себя и найти множество примеров отношений, которые можно истолковать с точки зрения математики.</p>
+<hr />
+<h2 id="yak2" style="text-align: center;"><strong>Операция сложения</strong></h2>
+<p>Операция сложения обозначается знаком &#171;плюс&#187; (+) и используется, когда складывают числа.</p>
+<p>Числа, которые складывают называются <strong>слагаемыми</strong>. Число, которое получается в результате их сложения, называется <strong>суммой</strong>.</p>
+<p>Например, сложим числа 3 и 2.</p>
+<p>Записываем <span style="color: #000000;">3 + 2 = 5</span></p>
+<p>В этом примере 3 − это слагаемое, 2 − второе слагаемое, 5 − сумма.</p>
+<p>В будущем придётся складывать довольно большие числа. Но сложение этих больших чисел в конечном итоге будет сводиться к тому, чтобы сложить маленькие.</p>
+<p>Поэтому нужно научиться складывать маленькие числа в диапазоне от 0 до 9. Например:</p>
+<p style="text-align: center;"><span style="color: #000000;">2 + 2 = 4</span></p>
+<p style="text-align: center;"><span style="color: #000000;">3 + 4 = 7</span></p>
+<p style="text-align: center;"><span style="color: #000000;">7 + 2 = 9</span></p>
+<p style="text-align: center;"><span style="color: #000000;">0 + 7 = 7</span></p>
+<p>Можете потренироваться, записав в тетради несколько простых примеров. Поверьте, ничего постыдного в этом нет.</p>
+<hr />
+<h2 id="yak3" style="text-align: center;"><strong>Операция вычитания</strong></h2>
+<p>Операция вычитания обозначается знаком &#171;минус&#187; (−) и используется когда из одного числа вычитают другое.</p>
+<p>Число, из которого вычитают другое число, называется <strong>уменьшаемым</strong>. Число, которое вычитают из уменьшаемого числа, называется <strong>вычитаемым</strong>. Число, которое получается в результате, называется <strong>разностью.</strong></p>
+<p>Например, вычтем из числа 10 число 2.</p>
+<p style="text-align: center;">10 − 2 = 8</p>
+<p>В этом примере число 10 − это уменьшаемое, число 2 − вычитаемое, а число 8 − разность.</p>
+<hr />
+<h2 id="yak4" style="text-align: center;"><strong>Операция умножения</strong></h2>
+<p>Обозначается знаком умножения (×) и используется когда одно число умножается на другое. Слово умножение говорит само за себя &#8212; какое-то число увеличивается в определенное количество раз, то есть мнóжится.</p>
+<p>Например, запись <span style="color: #000000;">4 × 3</span> означает, что четверка в ходе операции умножения будет увеличена в три раза.</p>
+<p>Число, которое увеличивают, называется <strong>множимым</strong>. Число, которое показывает во сколько раз нужно увеличить множимое, называется <strong>множителем</strong>. Число, которое получается в результате называется <strong>произведением</strong>.</p>
+<p>Например, умножим число 4 на 3.</p>
+<p style="text-align: center;"><span style="color: #000000;">4 × 3 = 12</span></p>
+<p>В этом примере 4 − это множимое, 3 − множитель, 12 − произведение.</p>
+<p>Запись <span style="color: #000000;">4 × 3</span> можно понимать как <span style="color: #000000;"><em>&#171;повторить число 4 три раза&#187;. </em></span>Например, если у нас имеются четыре конфеты и мы повторим их три раза, то полýчится двенадцать конфет:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-11101 size-full aligncenter" src="./op-ris-2.png" alt="оп рис 2" width="659" height="201" srcset="./op-ris-2.png 659w, ./op-ris-2.png 300w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>Другими словами, умножение 4 на 3 можно представить как сумму трёх четвёрок:</p>
+<p><img loading="lazy" decoding="async" class="aligncenter wp-image-2900 size-full" title="умножение 4 на 3 можно записать как сумму трёх четвёрок" src="./chetyre-umnozhit-na-tri-budet-dvenadcat.png" alt="четыре умножить на три будет двенадцать" width="247" height="94" /></p>
+<p>Умножение можно понимать и другим образом, а именно как взятие чего-то определенное количество раз.</p>
+<p>Допустим, в вазе лежат конфеты. Возьмём четыре конфеты один раз:</p>
+<p style="text-align: center;"><span style="color: #000000;">4 конф. × 1 = 4 конф.</span></p>
+<p>У нас в руках окажется четыре конфеты.</p>
+<p>Попробуем взять четыре конфеты 2 раза:</p>
+<p style="text-align: center;"><span style="color: #000000;">4 конф × 2 = 8 конф.</span></p>
+<p>У нас в руках окажется восемь конфет.</p>
+<p>Попробуем взять четыре конфеты ноль раз, то есть ни разу:</p>
+<p style="text-align: center;"><span style="color: #000000;">4 × 0 = 0</span></p>
+<p>У нас на руках не окажется конфет, поскольку мы ни разу их не взяли. Поэтому умножение любого числа на ноль даёт в ответе ноль.</p>
+<p>В некоторых книгах множимое и множитель называют одним общим словом &#8212; <strong>сомножители</strong>. Например, в записи 4 × 3 множимым является 4, а множителем 3, но эти два числа ещё можно назвать сомножителями. Ошибкой это не будет.</p>
+<p>В будущем мы будем умножать довольно большие числа. Но умножение больших чисел свóдится к тому, чтобы умножить маленькие. Поэтому сначала нужно научиться умножать маленькие числа. Благо, они уже перемножены и записаны в специальную таблицу, которую называют <em><span style="color: #000000;">таблицей умножения</span></em>. Если вы живёте в России или в странах бывшего СССР, то наверняка знаете эту таблицу наизусть. Если не знаете, обязательно выучите!</p>
+<hr />
+<h2 id="yak5" style="text-align: center;"><strong>Операция деления</strong></h2>
+<p>Обозначается знаком деления (÷ или : ) и используется когда делят числа.</p>
+<p>Число, которое делят называют <strong>делимым</strong>. Число, которое указывает на сколько частей делят делимое, называется <strong>делителем</strong>. Число, которое получается в результате, называется <strong>частным</strong>.</p>
+<p>Например, разделим число 10 на 2.</p>
+<p style="text-align: center;"><span style="color: #000000;">10 :­ 2 = 5</span></p>
+<p>В этом примере число 10 − это делимое, число 2 − делитель, число 5 − частное.</p>
+<p>Если у нас имеются десять конфет и мы разделим их на две равные части, то в каждой части полýчится по пять конфет:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-11098 aligncenter" src="./op-ris-11.png" alt="оп рис 1" width="659" height="223" srcset="./op-ris-11.png 659w, ./op-ris-11.png 300w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>Так можно понять смысл записи <span style="color: #000000;">10 :­ 2 = 5.</span></p>
+<hr />
+<h2 id="yak6" style="text-align: center;">Задания для самостоятельного решения</h2>
+<p>Большинство людей решат эти задания в уме что конечно похвально. Однако, рекомендуется выполнить эти задания именно в тетради, взяв в руку карандаш. К математике следует привыкать посредством решения простых примеров.</p>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 1.</span> Запишите в тетради, что 2 больше, чем 1</div>
+<div class="ex ex1">
+<div class="decision-img"><span style="color: #000000;">2 &gt; 1</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex1">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 2.</span> Запишите в тетради, что 2 меньше, чем 3</div>
+<div class="ex ex2">
+<div class="decision-img"><span style="color: #000000;">2 &lt; 3</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex2">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 3.</span> Запишите в тетради, что 5 больше, чем 2</div>
+<div class="ex ex3">
+<div class="decision-img"><span style="color: #000000;">5 &gt; 2</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex3">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 4.</span> Запишите в тетради, что 8 больше, чем 5</div>
+<div class="ex ex4">
+<div class="decision-img"><span style="color: #000000;">8 &gt; 5</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex4">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 5.</span> Запишите в тетради, что 10 больше, чем 8</div>
+<div class="ex ex5">
+<div class="decision-img"><span style="color: #000000;">10 &gt; 8</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex5">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 6.</span> Запишите в тетради, что 1 равно 1</div>
+<div class="ex ex6">
+<div class="decision-img"><span style="color: #000000;">1 = 1</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex6">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 7.</span> Запишите в тетради, что 10 равно 10</div>
+<div class="ex ex7">
+<div class="decision-img"><span style="color: #000000;">10 = 10</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex7">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 8.</span> Запишите в тетради, что 7 не равно 8</div>
+<div class="ex ex8">
+<div class="decision-img"><span style="color: #000000;">7 ≠ 8</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex8">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 9.</span> Запишите в тетради, что 15 не равно 12</div>
+<div class="ex ex9">
+<div class="decision-img"><span style="color: #000000;">15 ≠ 12</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex9">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 10.</span> Запишите в тетради, что 3 не равно 2</div>
+<div class="ex ex10">
+<div class="decision-img"><span style="color: #000000;">3 ≠ 2</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex10">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 11.</span> Сложите числа 2 и 3</div>
+<div class="ex ex11">
+<div class="decision-img"><span style="color: #000000;">2 + 3 = 5</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex11">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 12.</span> Сложите числа 7 и 2</div>
+<div class="ex ex12">
+<div class="decision-img"><span style="color: #000000;">7 + 2 = 9</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex12">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 13.</span> Сложите числа 4 и 3</div>
+<div class="ex ex13">
+<div class="decision-img"><span style="color: #000000;">4 + 3 = 7</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex13">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 14.</span> Сложите числа 10 и 5</div>
+<div class="ex ex14">
+<div class="decision-img"><span style="color: #000000;">10 + 5 = 15</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex14">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 15.</span> Сложите числа 12 и 8</div>
+<div class="ex ex15">
+<div class="decision-img"><span style="color: #000000;">12 + 8 = 20</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex15">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 16.</span> Вычесть из числа 5 число 2</div>
+<div class="ex ex16">
+<div class="decision-img"><span style="color: #000000;">5 − 2 = 3</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex16">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 17.</span> Вычесть из числа 9 число 4</div>
+<div class="ex ex17">
+<div class="decision-img"><span style="color: #000000;">9 − 4 = 5</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex17">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 18.</span> Вычесть из числа 10 число 8</div>
+<div class="ex ex18">
+<div class="decision-img"><span style="color: #000000;">10 − 8 = 2</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex18">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 19.</span> Вычесть из числа 12 число 4</div>
+<div class="ex ex19">
+<div class="decision-img"><span style="color: #000000;">12 − 4 = 8</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex19">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 20.</span> Вычесть из числа 20 число 12</div>
+<div class="ex ex20">
+<div class="decision-img"><span style="color: #000000;">20 − 12 = 8</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex20">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 21.</span> Умножьте 2 на 3</div>
+<div class="ex ex21">
+<div class="decision-img"><span style="color: #000000;">2 × 3 = 6</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex21">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 22.</span> Умножьте 3 на 4</div>
+<div class="ex ex22">
+<div class="decision-img"><span style="color: #000000;">3 × 4 = 12</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex22">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 23.</span> Умножьте 5 на 3</div>
+<div class="ex ex23">
+<div class="decision-img"><span style="color: #000000;">5 × 3 = 15</span></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex23">Показать решение</a></div>
+</div>
+<hr/>
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+   $('.show_hide').showHide({			 
+		speed: 500,  
+		easing: '',  
+		changeText: 1, 
+		showText: 'Показать решение',
+		hideText: 'Скрыть решение' 
+					 
+	}); 
+
+});
+
+</script>
+
+</body>
+</html>

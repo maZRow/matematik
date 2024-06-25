@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"  class="no-js">
+<head>
+
+</script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="goto.js"></script> <!-- Он добавляет обработчик события "click" на все ссылки внутри элемента с идентификатором "menu". Когда пользователь кликает на ссылку, скрипт предотвращает действие по умолчанию (переход по ссылке) и получает значение атрибута "href" этой ссылки. --> 
+<script type="text/javascript" src="showHide.js"></script> <!--скрытие показ элимента -->
+
+
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+
+
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+
+</style>
+<link rel='stylesheet' id='jquery-smooth-scroll-css' href='./style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css' href='./style2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css' href='./style3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css' href='./style4.css' type='text/css' media='all' />
+
+
+</style>	<style type="text/css" id="twentyfifteen-header-css">
+			.site-header {
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
+
+		.site-branding {
+			min-height: 42px;
+		}
+
+		@media screen and (min-width: 46.25em) {
+			.site-header {
+				padding-top: 21px;
+				padding-bottom: 21px;
+			}
+			.site-branding {
+				min-height: 56px;
+			}
+		}
+		@media screen and (min-width: 55em) {
+			.site-header {
+				padding-top: 25px;
+				padding-bottom: 25px;
+			}
+			.site-branding {
+				min-height: 62px;
+			}
+		}
+		@media screen and (min-width: 59.6875em) {
+			.site-header {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			.site-branding {
+				min-height: 0;
+			}
+		}
+			.site-title,
+		.site-description {
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute;
+		}
+		</style>
+	<link rel="icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" sizes="32x32" />
+<link rel="icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" />
+<meta name="msapplication-TileImage" content="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" />
+        </head>
+
+
+<body data-rsssl=1 class="post-template-default single single-post postid-728 single-format-standard wp-custom-logo">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href=""></a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<a href="./index.html" class="custom-logo-link" rel="home"><img width="248" height="248" src="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" class="custom-logo" alt="Математика с нуля" decoding="async" fetchpriority="high" srcset="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png 248w, http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png. 150w" sizes="(max-width: 248px) 100vw, 248px" /></a>						<p class="site-title"><a href="https://spacemath.xyz/" rel="home">Математика с нуля</a></p>
+											<p class="site-description"></p>
+									<button class="secondary-toggle"></button>
+			</div>
+		</header>
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-samoe-glavnoe-menyu-container"><ul id="menu-samoe-glavnoe-menyu" class="nav-menu">
+					<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-44"><a href="./chisla.html">Шаг 1. Числа</a></li>
+					<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-48"><a href="./osnovnie_operacii.html">Шаг 2. Основные операции</a></li>
+					<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-79"><a href="./virajeniya.html">Шаг 3. Выражения</a></li>
+					<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-142"><a href="./preobrazovanie_virajeniy.html">Шаг 4. Замены в выражениях</a></li>
+					<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-154"><a href="./razryadi_dlya_nachinayushix.html">Шаг 5. Разряды для начинающих</a></li>
+					<li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-228"><a href="./umnojenie.html">Шаг 6. Умножение</a></li>
+					<li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-502"><a href="./delenie.html">Шаг 7. Деление</a></li>
+					<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-102"><a href="./poryadok_deistviy.html">Шаг 8. Порядок действий</a></li>
+					<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-107"><a href="./zakoni_matematiki.html">Шаг 9. Законы математики</a></li>
+					<li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-773"><a href="./deliteli_i_kratnie.html">Шаг 10. Делители и кратные</a></li>
+					<li id="menu-item-799" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-799"><a href="./nod_i_nok.html">Шаг 11. НОД и НОК</a></li>
+					<li id="menu-item-828" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-828"><a href="./drobi.html">Шаг 12. Дроби</a></li>
+					<li id="menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-865"><a href="./deistviya_s_drobyami.html">Шаг 13. Действия с дробями</a></li>
+					<li id="menu-item-1093" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1093"><a href="./smeshanie_chisla.html">Шаг 14. Смешанные числа</a></li>
+					<li id="menu-item-1322" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1322"><a href="./sravnenie_drobey.html">Шаг 15. Сравнение дробей</a></li>
+					<li id="menu-item-1432" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1432"><a href="./edinici_izmereniya.html">Шаг 16. Единицы измерения</a></li>
+					<li id="menu-item-1507" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1507"><a href="./primenenie_drobey.html">Шаг 17. Применение дробей</a></li>
+					<li id="menu-item-1643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1643"><a href="./desyatichnie_drobi.html">Шаг 18. Десятичные дроби</a></li>
+					<li id="menu-item-1792" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1792"><a href="./deystviya_s_desyatichnimi_drobyami.html">Шаг 19. Действия с десятичными дробями</a></li>
+					<li id="menu-item-2046" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2046"><a href="./primenenie_desyatichnix_drobey.html">Шаг 20. Применение десятичных дробей</a></li>
+					<li id="menu-item-2129" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2129"><a href="./okruglenie_chisel.html">Шаг 21. Округление чисел</a></li>
+					<li id="menu-item-2217" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2217"><a href="./periodicheskie_drobi.html">Шаг 22. Периодические дроби</a></li>
+					<li id="menu-item-2245" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2245"><a href="./perevod_edinic.html">Шаг 23. Перевод единиц</a></li>
+					<li id="menu-item-2268" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2268"><a href="./sootnosheniya.html">Шаг 24. Соотношения</a></li>
+					<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2316"><a href="./proporciya.html">Шаг 25. Пропорция</a></li>
+					<li id="menu-item-2349" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2349"><a href="./rasstoyanie_scorost_vremya.html">Шаг 26. Расстояние, скорость, время</a></li>
+					<li id="menu-item-2373" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2373"><a href="./pryamaya_proporcionalnost.html">Шаг 27. Прямая и обратная пропорциональность</a></li>
+					<li id="menu-item-2392" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2392"><a href="./procenti.html">Шаг 28. Проценты</a></li>
+					<li id="menu-item-2435" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2435"><a href="./otricatelnie_chisla.html">Шаг 29. Отрицательные числа</a></li>
+					<li id="menu-item-2475" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2475"><a href="./modul_chisla.html">Шаг 30. Модуль числа</a></li>
+					<li id="menu-item-2509" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2509"><a href="./chto_takoe_mnojestvo.html">Шаг 31. Что такое множество?</a></li>
+					<li id="menu-item-2597" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2597"><a href="./slozhenie_i_vychitanie_celyh_chisel.html">Шаг 32. Сложение и вычитание целых чисел</a></li>
+					<li id="menu-item-2745" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2745"><a href="./umnozhenie-i-delenie-tselyh-chisel.html>">Шаг 33. Умножение и деление целых чисел</a></li>
+					<li id="menu-item-3147" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3147"><a href="./ratsionalnye-chisla.html">Шаг 34. Рациональные числа</a></li>
+					<li id="menu-item-3391" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3391"><a href="./sravnenie-ratsionalnyh-chisel.html">Шаг 35. Сравнение рациональных чисел</a></li>
+					<li id="menu-item-3464" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3464"><a href="./slozhenie_i_vychitanie-racionalnyh_chisel.html">Шаг 36. Сложение и вычитание рациональных чисел</a></li>
+					<li id="menu-item-4044" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4044"><a href="./umnozhenie-i-delenie-ratsionalnyh-chisel.html">Шаг 37. Умножение и деление рациональных чисел</a></li>
+					<li id="menu-item-4139" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4139"><a href="./dopolnitelnye-svedeniya-o-drobyah.html">Шаг 38. Дополнительные сведения о дробях</a></li>
+					<li id="menu-item-5035" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5035"><a href="./bukvennye-vyrazheniya.html">Шаг 39. Буквенные выражения</a></li>
+					<li id="menu-item-5175" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5175"><a href="./vynesenie-obshhego-mnozhitelya-za-skobki.html">Шаг 40. Вынесение общего множителя за скобки</a></li>
+					<li id="menu-item-5176" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5176"><a href="./raskrytie-skobok.html">Шаг 41. Раскрытие скобок</a></li>
+					<li id="menu-item-5636" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5636"><a href="./prostejshie-zadachi-po-matematike.html">Шаг 42. Простейшие задачи по математике</a></li>
+					<li id="menu-item-5637" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5637"><a href="./zadachi-na-drobi.html">Шаг 43. Задачи на дроби</a></li>
+					<li id="menu-item-5638" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5638"><a href="./zadachi-na-protsenty.html">Шаг 44. Задачи на проценты</a></li>
+					<li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5639"><a href="./zadachi-na-dvizhenie.html">Шаг 45. Задачи на движение</a></li>
+					<li id="menu-item-5640" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5640"><a href="./proizvoditelnost.html">Шаг 46. Производительность</a></li>
+					<li id="menu-item-5641" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5641"><a href="./elementy-statistiki.html">Шаг 47. Элементы статистики</a></li>
+					<li id="menu-item-7737" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7737"><a href="./obshhie-svedeniya-ob-uravneniyah.html">Шаг 48. Общие сведения об уравнениях</a></li>
+					<li id="menu-item-7752" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7752"><a href="./reshenie-zadach-s-pomoshhyu-uravnenij.html">Шаг 49. Решение задач с помощью уравнений</a></li>
+					<li id="menu-item-7760" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7760"><a href="./reshenie-zadach-s-pomoshhyu-proportsii.html">Шаг 50. Решение задач с помощью пропорции</a></li>
+					<li id="menu-item-7761" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7761"><a href="./sistemy-linejnyh-uravnenij.html">Шаг 51. Системы линейных уравнений</a></li>
+					<li id="menu-item-8777" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8777"><a href="./obshhie-svedeniya-o-neravenstvah.html">Шаг 52. Общие сведения о неравенствах</a></li>
+					<li id="menu-item-8848" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8848"><a href="./sistemy-linejnyh-neravenstv-s-odnoj-peremennoj.html">Шаг 53. Системы линейных неравенств с одной переменной</a></li>
+					<li id="menu-item-8852" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8852"><a href="./operatsii-nad-mnozhestvami.html">Шаг 54. Операции над множествами</a></li>
+					<li id="menu-item-9929" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9929"><a href="./stepen-s-naturalnym-pokazatelem.html">Шаг 55. Степень с натуральным показателем</a></li>
+					<li id="menu-item-9956" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9956"><a href="./stepen-s-tselym-pokazatelem.html">Шаг 56. Степень с целым показателем</a></li>
+					<li id="menu-item-9965" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9965"><a href="./perimetr-ploshhad-i-obyom.html">Шаг 57. Периметр, площадь и объём</a></li>
+					<li id="menu-item-10019" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10019"><a href="./odnochleny.html">Шаг 58. Одночлены</a></li>
+					<li id="menu-item-10538" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10538"><a href="./mnogochleny.html">Шаг 59. Многочлены</a></li>
+					<li id="menu-item-10539" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10539"><a href="./formuly-sokrashhennogo-umnozheniya.html">Шаг 60. Формулы сокращённого умножения</a></li>
+					<li id="menu-item-10540" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10540"><a href="./razlozhenie-mnogochlena-na-mnozhiteli.html">Шаг 61. Разложение многочлена на множители</a></li>
+					<li id="menu-item-10541" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10541"><a href="./delenie-mnogochlenov.html">Шаг 62. Деление многочленов</a></li>
+					<li id="menu-item-10542" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10542"><a href="./tozhdestvennye-preobrazovaniya-mnogochlenov.html">Шаг 63. Тождественные преобразования многочленов</a></li>
+					<li id="menu-item-11033" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11033"><a href="./kvadratnyj-koren.html">Шаг 64. Квадратный корень</a></li>
+					<li id="menu-item-11041" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11041"><a href="./algoritm-izvlecheniya-kvadratnogo-kornya.html">Шаг 65. Алгоритм извлечения квадратного корня</a></li>
+					<li id="menu-item-11548" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11548"><a href="./kvadratnoe-uravnenie.html">Шаг 66. Квадратное уравнение</a></li>
+					<li id="menu-item-11578" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11578"><a href="./kvadratnoe-uravnenie-s-chyotnym-vtorym-koeffitsientom.html">Шаг 67. Квадратное уравнение с чётным вторым коэффициентом</a></li>
+					<li id="menu-item-11651" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11651"><a href="./teorema-vieta.html">Шаг 68. Теорема Виета</a></li>
+					<li id="menu-item-11845" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11845"><a href="./razlozhenie-kvadratnogo-tryohchlena-na-mnozhiteli.html">Шаг 69. Разложение квадратного трёхчлена на множители</a></li>
+					<li id="menu-item-12274" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12274"><a href="./obobshhyonnoe-ponyatie-modulya-chisla.html">Шаг 70. Обобщённое понятие модуля числа</a></li>
+					<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="./uravnenie-s-modulem.html">Шаг 71. Уравнение с модулем</a></li>
+					<li id="menu-item-12671" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12671"><a href="./reshenie-uravnenij-s-modulem-metodom-intervalov.html">Шаг 72. Решение уравнений с модулем методом интервалов</a></li>
+					<li id="menu-item-12847" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12847"><a href="./neravenstva-s-modulem.html">Шаг 73. Неравенства с модулем</a></li>
+					<li id="menu-item-12866" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12866"><a href="./reshenie-neravenstv-s-modulem-metodom-intervalov.html">Шаг 74. Решение неравенств с модулем методом интервалов</a></li>
+					<li id="menu-item-12915" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12915"><a href="./izvlechenie-kvadratnogo-kornya-iz-obeih-chastej-uravneniya.html">Шаг 75. Извлечение квадратного корня из обеих частей уравнения</a></li>
+</ul></div>			</nav>
+		
+		
+		
+	</div>
+
+	</div>
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-728" class="post-728 post type-post status-publish format-standard hentry category-bez-rubriki">
+	
+	
+	<header class="entry-header">
+      
+      
+      <div style="margin-bottom:40px; margin-top:0; "> 
+        
+</script>
+    </div>
+
+	
+	
+	
+		<h1 class="entry-title">Делители и кратные</h1>      
+
+      
+	</header>
+
+	<div class="entry-content">
+		<p>В данном уроке мы рассмотрим такие понятия как <strong>делители</strong> и <strong>кратные</strong>.</p>
+<nav id="menu"><b>Содержание урока</b></p>
+<ul class="navless">
+<li><a href="#yak1">Что такое делитель?</a></li>
+<li><a href="#yak2">Кратные числа</a></li>
+<li><a href="#yak3">Признаки делимости чисел</a></li>
+<li><a href="#yak4">Чётные и нечётные числа</a></li>
+<li><a href="#yak5">Простые и составные числа</a></li>
+<li><a href="#razlojenie_chisla_na_mnojiteli">Разложение составного числа на простые множители</a></li>
+<li><a href="#yak7">Нахождение делителей числа</a></li>
+<li><a href="#yak8">Задания для самостоятельного решения</a></li>
+</ul>
+</nav>
+<h2 id="yak1" style="text-align: center;">Что такое делитель?</h2>
+<p>Мы знаем, что делитель это число, показывающее на сколько частей нужно разделить делимое. Например, в выражении 8 : 2 = 4, делителем является число 2. Это число показывает на сколько частей нужно разделить число 8. После разделения получается ответ 4. Как видно из примера, число 8 делится на число 2 без остатка. Говорят, что число 2 является делителем числа 8.</p>
+<p><strong>Пример 1</strong>. Число 2 является делителем числа 8, поскольку 8 делится на 2 без остатка:</p>
+<p style="text-align: center;"><span style="color: #000000;">8 : 2 = 4</span></p>
+<p><strong>Пример 2</strong>. Число 3 является делителем числа 9, поскольку 9 делится на 3 без остатка:</p>
+<p style="text-align: center;"><span style="color: #000000;">9 : 3 = 3</span></p>
+<p><strong>Пример 3.</strong> Число 4 не является делителем числа 10 поскольку 10 не делится на 4 без остатка:</p>
+<p style="text-align: center;"><span style="color: #000000;">10 : 4 = 2 (2 в остатке)</span></p>
+<hr />
+<p><span style="color: #333399;"><strong>Определение</strong>. <strong>Делителем числа <em>а</em> называется число, на которое число <em>а</em> делится без остатка</strong>.</span></p>
+<p>Данное определение содержит переменную <span style="color: #000000;"><em>a</em></span>. Подставим вместо этой переменной любое<em> </em>число, например число 12 и прочитаем определение:</p>
+<p><span style="color: #333399;"><strong>Делителем числа <span style="color: #993300;">12</span> называется число, на которое <span style="color: #993300;">12</span> делится без остатка</strong>.</span></p>
+<p>Попробуем перечислить эти числа:</p>
+<p style="text-align: center;"><span style="color: #0000ff;">1, 2, 3, 4, 6, 12</span></p>
+<p>Все эти числа являются делителями числа 12, поскольку число 12 делится на них без остатка. Покажем это:</p>
+<p style="text-align: center;"><span style="color: #000000;">12 : <span style="color: #0000ff;">1</span> = 12</span><br />
+<span style="color: #000000;">12 : <span style="color: #0000ff;">2</span> = 6</span><br />
+<span style="color: #000000;">12 : <span style="color: #0000ff;">3</span> = 4</span><br />
+<span style="color: #000000;">12 : <span style="color: #0000ff;">4</span> = 3</span><br />
+<span style="color: #000000;">12 : <span style="color: #0000ff;">6</span> = 2</span><br />
+<span style="color: #000000;">12 : <span style="color: #0000ff;">12</span> = 1</span></p>
+<hr />
+<h2 id="yak2" style="text-align: center;">Кратные числа</h2>
+<p>Если какое-нибудь число без остатка разделилось на другое, то его называют кратным этого числа. Например, 6 без остатка делится на 3. Поэтому 6 является кратным числа 3</p>
+<p style="text-align: center;"><span style="color: #000000;">6 : 3 = 2</span></p>
+<p style="text-align: left;"><span style="color: #333399;"><strong>Определение. Кратным числа <em>а</em> называется число, которое делится без остатка на <em>а</em></strong>.</span></p>
+<p style="text-align: left;">Данное определение содержит переменную <span style="color: #000000;"><em>a</em></span>. Подставим вместо этой переменной любое число, например число 5 и прочитаем определение:</p>
+<p style="text-align: left;"><span style="color: #333399;"><strong>Кратным числа <span style="color: #993300;">5</span> называется число, которое делится без остатка на <span style="color: #993300;">5</span><em>.</em></strong></span></p>
+<p style="text-align: left;">У любого числа бесконечно много кратных. Например, первыми кратными числа 5, являются числа 5, 10, 15, 20, 25. Все они кратны 5, поскольку делятся на 5 без остатка:</p>
+<p style="text-align: center;"><span style="color: #0000ff;">5</span> : 5 = 1<br />
+<span style="color: #0000ff;">10</span> : 5 = 2<br />
+<span style="color: #0000ff;">15</span> : 5 = 3<br />
+<span style="color: #0000ff;">20</span> : 5 = 4<br />
+<span style="color: #0000ff;">25</span> : 5 = 5</p>
+<hr />
+<h2 id="yak3" style="text-align: center;">Признаки делимости чисел</h2>
+<p style="text-align: left;">Признаки делимости чисел используются для того, чтобы ускорить процесс деления чисел. Существует множество признаков делимости и других интересных алгоритмов, значительно ускоряющих решение и освобождающих от излишней волокиты. Рассмотрим наиболее популярные из них.</p>
+<p style="text-align: left;"><strong>Признак делимости на 10</strong></p>
+<p>Любое число, которое оканчивается нулем, делится без остатка на 10. Чтобы получить частное, достаточно отбросить цифру 0 в делимом.</p>
+<p>Например, 380 : 10 = 38. Мы просто отбросили последний ноль в числе 380.</p>
+<p>В случае, если мы имеем выражение такого вида 385 : 10, то получится 38 и 5 в остатке, поскольку 380 : 10 = 38, а пятерка это остаток, который не разделился.</p>
+<p>Таким образом, если число оканчивается цифрой 0, то оно делится без остатка на 10. Если же оно оканчивается другой цифрой, то оно не делится без остатка на 10. Остаток в этом случае равен последней цифре числа. Действительно, в примере 385 : 10 = 38 (5 в остатке), остаток равен последней цифре в числе 385, то есть пятерке.</p>
+<p style="text-align: left;"><strong>Признак делимости на 5 и на 2</strong></p>
+<p>Любое число, которое оканчивается нулем, делится без остатка и на 5, и на 2.</p>
+<p>Примеры:</p>
+<p style="text-align: left;"><span style="color: #000000;">10 : 5 = 2</span></p>
+<p style="text-align: left;"><span style="color: #000000;">100 : 5 = 20</span></p>
+<p style="text-align: left;"><span style="color: #000000;">100 : 2 = 50</span></p>
+<p><strong>Признак делимости на 5</strong></p>
+<p>Если число оканчивается цифрой 0 или 5, то оно делится без остатка на 5.</p>
+<p>Примеры:</p>
+<p style="text-align: left;"><span style="color: #000000;">355 : 5 = 71</span></p>
+<p style="text-align: left;"><span style="color: #000000;">200 : 5 = 40</span></p>
+<p style="text-align: left;"><span style="color: #000000;">475 : 5 = 95</span></p>
+<p><strong>Признак делимости на 3<em><br />
+</em></strong></p>
+<p>Число делится на 3, если сумма цифр этого числа делится на 3. Например, рассмотрим число 27, сумма его цифр 2 + 7 = 9. Девять, как мы знаем делится на 3, значит и 27 делится на 3:</p>
+<p style="text-align: center;">27 : 3 = 9</p>
+<p><strong>Признак делимости на 9<em><br />
+</em></strong></p>
+<p>Число делится на 9, если сумма его цифр делится на 9. Например, рассмотрим число 18. Сумма его цифр 1 + 8 = 9. Девять делится на девять, значит и 18 делится на 9</p>
+<p style="text-align: center;">18 : 9 = 2</p>
+<p>Рассмотрим число 846. Сумма его цифр 8 + 4 + 6 = 18.  Восемнадцать делится на девять, значит и 846 делится на 9:</p>
+<p><img decoding="async" class="size-full wp-image-762 aligncenter" src="./846994.png" alt="846994" width="141" height="169" /></p>
+<hr />
+<h2 id="yak4" style="text-align: center;">Чётные и нечётные числа</h2>
+<p><strong>Чётным</strong> называется число, которое делится без остатка на 2. Например, число 20 является четным, поскольку оно делится без остатка на 2:</p>
+<p style="text-align: center;"><span style="color: #000000;">20 : 2 = 10</span></p>
+<p><strong> Нечётным</strong> называется число, если при его делении на 2, остаётся остаток 1. Например число 21 является нечетным, поскольку после его деления на 2 остается остаток 1:</p>
+<p style="text-align: center;"><span style="color: #000000;">21 : 2 = 10 (1 в остатке)</span></p>
+<p>Как распознать чётное число от нечетного, не выполняя деления на 2? Очень просто. Из однозначных чисел чётными являются числа 0, 2, 4, 6, 8, а нечетными являются 1, 3, 5, 7, 9. Если число оканчивается чётной цифрой, то это число является чётным. Если число оканчивается нечетной цифрой, то это число является нечетным.</p>
+<p>Например, число 308 чётно, поскольку оно оканчивается чётной цифрой. Число 1024 тоже четно, поскольку оканчивается четной цифрой.</p>
+<p>А числа 305 и 1027 являются нечётными, поскольку они оканчиваются нечётными цифрами.</p>
+<hr />
+<h2 id="yak5" style="text-align: center;">Простые и составные числа</h2>
+<p><strong>Простым</strong> называется число, которое делится без остатка на единицу и на само себя. Другими словами, имеет только два делителя. Например, число 5 делится без остатка на единицу и на само себя:</p>
+<p style="text-align: center;">5 : <span style="color: #0000ff;">1</span> = 5</p>
+<p style="text-align: center;">5 : <span style="color: #0000ff;">5</span> = 1</p>
+<p>Значит, число 5 является простым числом.</p>
+<p><strong>Составным </strong>же называется число, которое имеет больше двух делителей. Например, число 4 составное, поскольку у него больше двух делителей:  4, 2 и 1</p>
+<p style="text-align: center;">4 : <span style="color: #0000ff;">4</span> = 1</p>
+<p style="text-align: center;">4 : <span style="color: #0000ff;">2</span> = 2</p>
+<p style="text-align: center;">4 : <span style="color: #0000ff;">1</span> = 4</p>
+<p>Значит, число 4 является составным числом.</p>
+<hr />
+<h2 id="razlojenie_chisla_na_mnojiteli" style="text-align: center;">Разложение составного числа на простые множители</h2>
+<p>Любое составное число можно разложить на простые множители. Чем-то похожим мы занимались в уроке <a href="./preobrazovanie_virajeniy.html" target="_blank" rel="noopener noreferrer">замены в выражениях</a>. Из этого урока мы узнали, что любое число, входящее в выражение, можно заменить на то же самое, но записанное в другом виде.</p>
+<p>Например, число 6 можно записать в виде суммы <span style="color: #000000;">4 + 2</span> или в виде частного <span style="color: #000000;">12 : 2</span> или в виде произведения <span style="color: #000000;">2 × 3</span>. Последнюю запись <span style="color: #000000;">2 × 3</span> можно назвать разложением числа 6 на простые множители.</p>
+<p>Суть разложения числа на простые множители заключается в том, чтобы представить это число в виде произведения нескольких простых множителей.</p>
+<p>Разложим число 4 на простые множители. Для этого соберем данное число из других чисел, при этом соединим их знаком умножения (×). Число 4 состоит из чисел 2 и 2. Эти два числа и являются простыми множителями, из которых состоит число 4</p>
+<p style="text-align: center;"><span style="color: #000000;">4 = 2 × 2</span></p>
+<hr />
+<p>Разложим на множители число 6. Число 6 можно собрать из чисел 2 и 3. Эти два числа и являются простыми множителями, из которых состоит число 6</p>
+<p style="text-align: center;"><span style="color: #000000;">6 = 2 × 3</span></p>
+<hr />
+<p>Разложим на множители число 8. Это число можно разложить на множители 2 и 4, при этом множитель 4 можно разложить на два множителя: <span style="color: #0000ff;">2</span> и <span style="color: #0000ff;">2</span>. Поэтому вместо четвёрки записываем её разложение:</p>
+<p style="text-align: center;"><img decoding="async" class="wp-image-10021 size-full aligncenter" src="./razlozhenie-chisla-8-na-prostye-mnozhiteli.png" alt="разложение числа 8 на простые множители" width="223" height="100" /></p>
+<p>Большие числа раскладываются таким же образом. Сначала их раскладывают на большие множители, затем эти большие множители раскладывают на маленькие. И так до тех пор, пока каждый множитель не станет простым числом.</p>
+<p>Например, разложим число 180 на простые множители. Число 180 это два множителя 18 и 10</p>
+<p style="text-align: center;"><span style="color: #000000;">180 = 18 × 10</span></p>
+<p>Теперь раскладываем множители 18 и 10 на другие множители:</p>
+<p style="text-align: center;">18 = 3 × <span style="color: #0000ff;">6</span></p>
+<p style="text-align: center;"> 10 = 5 × 2</p>
+<p>Теперь раскладываем выделенную синюю шестерку. Это последний большой множитель, который можно разложить на простые множители:</p>
+<p style="text-align: center;"><span style="color: #0000ff;">6 </span>= 2 × 3</p>
+<p>Теперь собираем все простые множители вместе:</p>
+<p style="text-align: center;"><img decoding="async" class="wp-image-10022 size-full aligncenter" src="./razlozhenie-chisla-180-na-prostye-mnozhiteli.png" alt="разложение числа 180 на простые множители" width="400" height="155" srcset="./razlozhenie-chisla-180-na-prostye-mnozhiteli.png 400w, ./razlozhenie-chisla-180-na-prostye-mnozhiteli-300x116.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></p>
+<p style="text-align: left;">На множители можно разложить только составное число. Простое число на множители не раскладывается. Именно поэтому, когда разложение доходит до простых чисел, мы эти простые числа дальше не раскладываем.</p>
+<p style="text-align: left;">Есть и второй способ разложения на простые множители. Он проще и хорошо подходит для больших чисел. Суть этого способа заключается в том, что сначала проводится вертикальная линия. Затем слева от этой линии записываются делимые, а справа &#8212; делители, которые впоследствии собирают во множители.</p>
+<p style="text-align: left;">При разложении числа этим способом, используют признаки делимости, такие как: признаки делимости на 2, на 3, на 5 и другие.</p>
+<p style="text-align: left;">Например, разложим предыдущее число 180 этим способом.</p>
+<p style="text-align: left;">Проводим вертикальную линию и слева записываем первое делимое 180</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-755 aligncenter" src="./11180.png" alt="11180" width="140" height="238" /></p>
+<p style="text-align: left;">Теперь применяем признаки делимости. В первую очередь проверяем делится ли 180 на 2. Если делится, то нужно записать эту двойку справа от вертикальной линии.</p>
+<p style="text-align: left;">180 делится на 2, поскольку 180 оканчивается нулём. Записываем двойку справа от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-756 aligncenter" src="./111802.png" alt="111802" width="142" height="239" /></p>
+<p style="text-align: left;">Теперь делим 180 на 2 и получаем второе делимое 90. Записываем это делимое слева от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-757 aligncenter" src="./111803.png" alt="111803" width="141" height="237" /></p>
+<p style="text-align: left;">Теперь делим 90. Снова применяем признаки делимости. Проверяем делится ли 90 на 2.</p>
+<p style="text-align: left;">90 делится на 2, поскольку 90 оканчивается нулём. Записываем двойку справа от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-758 aligncenter" src="./111804.png" alt="111804" width="140" height="240" /></p>
+<p style="text-align: left;">Теперь делим 90 на 2, получаем третье делимое 45. Записываем это делимое слева от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-759 aligncenter" src="./111805.png" alt="111805" width="141" height="238" /></p>
+<p style="text-align: left;">Теперь делим 45. Снова применяем признаки делимости. Проверяем делится ли 45 на 2.</p>
+<p style="text-align: left;">45 на 2 не делится. Тогда проверяем делится ли 45 на 3.</p>
+<p style="text-align: left;">45 делится на 3, поскольку сумма цифр 4 и 5 делится на 3. Записываем тройку справа от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-763 aligncenter" src="./111806.png" alt="111806" width="139" height="241" /></p>
+<p style="text-align: left;">Делим 45 на 3, получаем четвёртое делимое 15. Записываем это делимое слева от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-764 aligncenter" src="./111807.png" alt="111807" width="140" height="241" /></p>
+<p style="text-align: left;">Теперь делим 15. Проверяем делится ли 15 на 2.</p>
+<p style="text-align: left;">15 не делится на 2. Тогда проверяем делится ли 15 на 3.</p>
+<p style="text-align: left;">15 на 3 делится, поскольку сумма цифр 1 и 5 делится на 3. Записываем тройку справа от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-765 aligncenter" src="./111808.png" alt="111808" width="139" height="236" /></p>
+<p style="text-align: left;">Делим 15 на 3, получаем пятое делимое 5. Записываем пятёрку слева от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-766 aligncenter" src="./111809.png" alt="111809" width="140" height="236" /></p>
+<p style="text-align: left;">Теперь делим 5. Проверяем делится ли 5 на 2.</p>
+<p style="text-align: left;">5 не делится на 2. Тогда проверяем делится ли 5 на 3.</p>
+<p style="text-align: left;">5 не делится на 3. Тогда проверяем делится ли 5 на 5.</p>
+<p style="text-align: left;">5 делится на 5. Записываем эту пятёрку справа от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-767 aligncenter" src="./1118010.png" alt="1118010" width="141" height="237" /></p>
+<p style="text-align: left;">Делим 5 на 5, получаем шестое делимое 1. Записываем эту единицу слева от вертикальной линии:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="size-full wp-image-768 aligncenter" src="./1118011.png" alt="1118011" width="140" height="235" /></p>
+<p style="text-align: left;">На этом деление завершается, поскольку мы достигли единицы. Делители, которые записывают справа от вертикальной линии должны быть простыми числами. Поэтому, когда делимое 5 не разделилось на 2, а затем не разделилось на 3, мы попробовали разделить его на 5, не пробуя разделить на 4, поскольку 4 является не простым, а составным числом.</p>
+<p style="text-align: left;">Теперь переписываем в один ряд все делители, которые записаны справа от вертикальной линии. Они и будут разложением числа 180 на простые множители. Желательно записывать их, начиная с самых малых. Это позволяет упорядочить их по возрастанию:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-771" src="./1118012-1.png" alt="1118012" width="621" height="263" srcset="./1118012-1.png 621w, ./1118012-1-300x127.png 300w" sizes="(max-width: 621px) 100vw, 621px" /></p>
+<p style="text-align: left;">Не расстраивайтесь, если будете испытывать затруднения при разложении чисел на простые множители. Эта тема требует немного практики. Для тренировки можете разложить на простые множители следующие числа: 256,  378,  512.</p>
+<hr />
+<h2 id="yak7" style="text-align: center;">Нахождение делителей числа</h2>
+<p>В начале данного урока было сказано, что делителем называется число, на которое другое число делится без остатка.</p>
+<p>Например, число <span style="color: #000080;"><strong>2</strong></span> является делителем числа 6, поскольку число 6 можно без остатка разделить на <span style="color: #000080;"><strong>2</strong></span></p>
+<p style="text-align: center;">6 : <span style="color: #000080;"><strong>2</strong></span> = 3</p>
+<p>Ещё делителем числа 6 является число <span style="color: #000080;"><strong>3</strong></span></p>
+<p style="text-align: center;">6 : <span style="color: #000080;"><strong>3</strong></span> = 2</p>
+<p>Ещё делителем числа 6 является число <span style="color: #000080;"><strong>1</strong></span></p>
+<p style="text-align: center;">6 : <span style="color: #000080;"><strong>1</strong></span> = 6</p>
+<p>Наконец, делителем числа 6 является само это число</p>
+<p style="text-align: center;">6 : <strong><span style="color: #000080;">6</span></strong> = 1</p>
+<p>Перечислим все делители числа 6</p>
+<p style="text-align: center;"><span style="color: #333399;"><strong>1, 2, 3, 6</strong></span></p>
+<p>Иногда возникает необходимость найти все делители какого-нибудь числа. Чтобы понять, как это делается, рассмотрим несколько примеров.</p>
+<p><strong>Пример 1</strong>. Найти делители числа 12</p>
+<p>Во-первых, единица является делителем любого числа. Пусть и у нас первым делителем числа 12 будет 1</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-8529 aligncenter" src="./deliteli-chisla-12-tablitsa-ris-1.png" alt="делители числа 12 таблица рис 1" width="204" height="70" /></p>
+<p>Теперь раскладываем число 12 на простые множители:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-8400 aligncenter" src="./razlozhenie-chisla-12-na-mnozhiteli.png" alt="разложение числа 12 на множители" width="147" height="143" /></p>
+<p>Получили разложение <span style="color: #000000;">2 × 2 × 3. </span></p>
+<p>В процессе разложения числа 12 на простые множители, мы делили его на числа 2 и 3. На них число 12 разделилось без остатка, значит они тоже являются делителями числа 12. Внесём эти два числа в нашу таблицу делителей:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-8530 aligncenter" src="./deliteli-chisla-12-tablitsa-ris-2.png" alt="делители числа 12 таблица рис 2" width="204" height="138" /></p>
+<p>Чтобы получить остальные делители числа 12, нужно найти все возможные произведения его простых множителей между собой. Получаемые в результате ответы и будут остальными делителями числа 12.</p>
+<p>Число 12 мы разложили на простые множители <span style="color: #000000;">2 × 2 × 3. </span>Найдём все возможные произведения этих простых множителей между собой. Первое произведение это 2 × 2. Это произведение равно 4</p>
+<p style="text-align: center;"><span style="color: #000000;">2 × 2 = 4</span></p>
+<p>Занесём число 4 в нашу таблицу делителей</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-8531 aligncenter" src="./deliteli-chisla-12-tablitsa-ris-3.png" alt="делители числа 12 таблица рис 3" width="204" height="171" /></p>
+<p>Следующее возможное произведение из простых множителей числа 12 это произведение <span style="color: #000000;">2 × 3. </span>Данное произведение равно 6. Занесём число 6 в нашу таблицу делителей:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-8532 aligncenter" src="./deliteli-chisla-12-tablitsa-ris-4.png" alt="делители числа 12 таблица рис 4" width="204" height="205" srcset="./deliteli-chisla-12-tablitsa-ris-4.png 204w, ./deliteli-chisla-12-tablitsa-ris-4-150x150.png 150w" sizes="(max-width: 204px) 100vw, 204px" /></p>
+<p>Последнее возможное произведение из простых множителей числа 12 это произведение из всех его множителей, а именно <span style="color: #000000;">2 × 2 × 3. </span>Это произведение равно 12. Занесём число 12 в нашу таблицу делителей:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-8533 aligncenter" src="./deliteli-chisla-12-tablitsa-ris-5.png" alt="делители числа 12 таблица рис 5" width="204" height="239" /></p>
+<p>Таким образом, делителями числа 12 являются числа 1, 2, 3, 4, 6, 12.</p>
+<p>На основании приведённого примера можно сформировать правило для нахождения делителей числа:</p>
+<p><span style="color: #333399;"><strong>Чтобы найти делители числа, нужно:</strong></span></p>
+<ul>
+<li><span style="color: #333399;"><strong>записать в качестве первого делителя единицу;</strong></span></li>
+<li><span style="color: #333399;"><strong>разложить исходное число на простые множители и выписать из полученных простых множителей те множители, которые являются делителями исходного числа (если множитель повторяется, то выписать его нужно только один раз); </strong></span></li>
+<li><span style="color: #333399;"><span style="color: #333399;"><strong>найти все возможные произведения полученных простых множителей между собой. Получаемые в результате ответы будут остальными делителями исходного числа.</strong></span></span></li>
+</ul>
+<p><strong>Пример 2</strong>. Найти делители числа 6</p>
+<p>Первым делителем числа 6 запишем единицу:</p>
+<p style="text-align: center;"><strong><span style="color: #333399;">1</span></strong></p>
+<p>Теперь разложим число 6 на простые множители:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-8525 aligncenter" src="./razlozhenie-chisla-6-na-prostye-mnozhiteli.png" alt="разложение числа 6 на простые множители" width="70" height="102" /></p>
+<p>Выпишем из полученного разложения те множители, которые являются делителями числа 6. Видим, что это множители 2 и 3. Они будут следующими делителями числа 6. Допишем их к нашим делителям:</p>
+<p style="text-align: center;"><strong><span style="color: #333399;">1, 2, 3</span></strong></p>
+<p>Теперь найдём все возможные произведения простых множителей числа 6. В данном случае имеется только одно произведение, а именно <span style="color: #000000;">2 × 3</span>. Это произведение равно 6. Допишем число 6 к нашим делителям:</p>
+<p style="text-align: center;"><strong><span style="color: #333399;">1, 2, 3, 6</span></strong></p>
+<p>Таким образом, делителями числа 6 являются числа <strong><span style="color: #333399;">1, 2, 3, 6</span></strong>.</p>
+<hr />
+<h3 id="yak8" style="text-align: center;">Задания для самостоятельного решения</h3>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 1.</span> Разложите число 256 на простые множители</div>
+<div class="ex ex1">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razlozhenie-chisla-256-na-mnozhiteli.png" /></div>
+</div>
+<div class="b-test-work-show-example" style="margin-top: 10px;"><a class="show_hide" href="#" rel=".ex1">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 2.</span> Разложите число 52 на простые множители</div>
+<div class="ex ex2">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razlozhenie-chisla-52-na-mnozhiteli.png" /></div>
+</div>
+<div class="b-test-work-show-example" style="margin-top: 10px;"><a class="show_hide" href="#" rel=".ex2">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 3.</span> Разложите число 98 на простые множители</div>
+<div class="ex ex3">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razlozhenie-chisla-98-na-mnozhiteli.png" /></div>
+</div>
+<div class="b-test-work-show-example" style="margin-top: 10px;"><a class="show_hide" href="#" rel=".ex3">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 4.</span> Разложите число 116 на простые множители</div>
+<div class="ex ex4">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razlozhenie-chisla-116-na-mnozhiteli.png" /></div>
+</div>
+<div class="b-test-work-show-example" style="margin-top: 10px;"><a class="show_hide" href="#" rel=".ex4">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 5.</span> Разложите число 228 на простые множители</div>
+<div class="ex ex5">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razlozhenie-chisla-228-na-mnozhiteli.png" /></div>
+</div>
+<div class="b-test-work-show-example" style="margin-top: 10px;"><a class="show_hide" href="#" rel=".ex5">Показать решение</a></div>
+</div>
+<hr/>
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+   $('.show_hide').showHide({			 
+		speed: 500,  
+		easing: '', 
+		changeText: 1, 
+		showText: 'Показать решение',
+		hideText: 'Скрыть решение' 
+					 
+	}); 
+
+});
+
+</script>
+
+</body>
+</html>
