@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"  class="no-js">
+<head>
+  
+
+</script>
+</script>
+</script>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="goto.js"></script>
+        <script type="text/javascript" src="showHide.js"></script>
+
+
+
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='jquery-smooth-scroll-css' href='./style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css' href='./style2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css' href='./style3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css' href='./style4.css' type='text/css' media='all' />
+
+</style>	<style type="text/css" id="twentyfifteen-header-css">
+			.site-header {
+			padding-top: 14px;
+			padding-bottom: 14px;
+		}
+
+		.site-branding {
+			min-height: 42px;
+		}
+
+		@media screen and (min-width: 46.25em) {
+			.site-header {
+				padding-top: 21px;
+				padding-bottom: 21px;
+			}
+			.site-branding {
+				min-height: 56px;
+			}
+		}
+		@media screen and (min-width: 55em) {
+			.site-header {
+				padding-top: 25px;
+				padding-bottom: 25px;
+			}
+			.site-branding {
+				min-height: 62px;
+			}
+		}
+		@media screen and (min-width: 59.6875em) {
+			.site-header {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			.site-branding {
+				min-height: 0;
+			}
+		}
+			.site-title,
+		.site-description {
+			clip: rect(1px, 1px, 1px, 1px);
+			position: absolute;
+		}
+		</style>
+	<link rel="icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" sizes="32x32" />
+<link rel="icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" />
+<meta name="msapplication-TileImage" content="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" />
+        </head>
+
+
+<body data-rsssl=1 class="post-template-default single single-post postid-152 single-format-standard wp-custom-logo">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content"></a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<a href="./index.html" class="custom-logo-link" rel="home"><img width="248" height="248" src="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png" class="custom-logo" alt="Математика с нуля" decoding="async" fetchpriority="high" srcset="http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png 248w, http://school8.ishimobraz.ru/wp-content/uploads/2019/01/cropped-Эмблема-МАОУ-СОШ-№8-e1547186676993-1.png. 150w" sizes="(max-width: 248px) 100vw, 248px" /></a>						<p class="site-title"><a href="" rel="home"></a></p>
+											<p class="site-description"></p>
+									<button class="secondary-toggle"></button>
+			</div>
+		</header>
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-samoe-glavnoe-menyu-container"><ul id="menu-samoe-glavnoe-menyu" class="nav-menu">
+					<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-44"><a href="./chisla.html">Шаг 1. Числа</a></li>
+					<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-48"><a href="./osnovnie_operacii.html">Шаг 2. Основные операции</a></li>
+					<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-79"><a href="./virajeniya.html">Шаг 3. Выражения</a></li>
+					<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-142"><a href="./preobrazovanie_virajeniy.html">Шаг 4. Замены в выражениях</a></li>
+					<li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-154"><a href="./razryadi_dlya_nachinayushix.html">Шаг 5. Разряды для начинающих</a></li>
+					<li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-228"><a href="./umnojenie.html">Шаг 6. Умножение</a></li>
+					<li id="menu-item-502" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-502"><a href="./delenie.html">Шаг 7. Деление</a></li>
+					<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-102"><a href="./poryadok_deistviy.html">Шаг 8. Порядок действий</a></li>
+					<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-107"><a href="./zakoni_matematiki.html">Шаг 9. Законы математики</a></li>
+					<li id="menu-item-773" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-773"><a href="./deliteli_i_kratnie.html">Шаг 10. Делители и кратные</a></li>
+					<li id="menu-item-799" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-799"><a href="./nod_i_nok.html">Шаг 11. НОД и НОК</a></li>
+					<li id="menu-item-828" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-828"><a href="./drobi.html">Шаг 12. Дроби</a></li>
+					<li id="menu-item-865" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-865"><a href="./deistviya_s_drobyami.html">Шаг 13. Действия с дробями</a></li>
+					<li id="menu-item-1093" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1093"><a href="./smeshanie_chisla.html">Шаг 14. Смешанные числа</a></li>
+					<li id="menu-item-1322" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1322"><a href="./sravnenie_drobey.html">Шаг 15. Сравнение дробей</a></li>
+					<li id="menu-item-1432" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1432"><a href="./edinici_izmereniya.html">Шаг 16. Единицы измерения</a></li>
+					<li id="menu-item-1507" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1507"><a href="./primenenie_drobey.html">Шаг 17. Применение дробей</a></li>
+					<li id="menu-item-1643" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1643"><a href="./desyatichnie_drobi.html">Шаг 18. Десятичные дроби</a></li>
+					<li id="menu-item-1792" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1792"><a href="./deystviya_s_desyatichnimi_drobyami.html">Шаг 19. Действия с десятичными дробями</a></li>
+					<li id="menu-item-2046" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2046"><a href="./primenenie_desyatichnix_drobey.html">Шаг 20. Применение десятичных дробей</a></li>
+					<li id="menu-item-2129" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2129"><a href="./okruglenie_chisel.html">Шаг 21. Округление чисел</a></li>
+					<li id="menu-item-2217" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2217"><a href="./periodicheskie_drobi.html">Шаг 22. Периодические дроби</a></li>
+					<li id="menu-item-2245" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2245"><a href="./perevod_edinic.html">Шаг 23. Перевод единиц</a></li>
+					<li id="menu-item-2268" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2268"><a href="./sootnosheniya.html">Шаг 24. Соотношения</a></li>
+					<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2316"><a href="./proporciya.html">Шаг 25. Пропорция</a></li>
+					<li id="menu-item-2349" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2349"><a href="./rasstoyanie_scorost_vremya.html">Шаг 26. Расстояние, скорость, время</a></li>
+					<li id="menu-item-2373" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2373"><a href="./pryamaya_proporcionalnost.html">Шаг 27. Прямая и обратная пропорциональность</a></li>
+					<li id="menu-item-2392" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2392"><a href="./procenti.html">Шаг 28. Проценты</a></li>
+					<li id="menu-item-2435" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2435"><a href="./otricatelnie_chisla.html">Шаг 29. Отрицательные числа</a></li>
+					<li id="menu-item-2475" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2475"><a href="./modul_chisla.html">Шаг 30. Модуль числа</a></li>
+					<li id="menu-item-2509" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2509"><a href="./chto_takoe_mnojestvo.html">Шаг 31. Что такое множество?</a></li>
+					<li id="menu-item-2597" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2597"><a href="./slozhenie_i_vychitanie_celyh_chisel.html">Шаг 32. Сложение и вычитание целых чисел</a></li>
+					<li id="menu-item-2745" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2745"><a href="./umnozhenie-i-delenie-tselyh-chisel.html>">Шаг 33. Умножение и деление целых чисел</a></li>
+					<li id="menu-item-3147" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3147"><a href="./ratsionalnye-chisla.html">Шаг 34. Рациональные числа</a></li>
+					<li id="menu-item-3391" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3391"><a href="./sravnenie-ratsionalnyh-chisel.html">Шаг 35. Сравнение рациональных чисел</a></li>
+					<li id="menu-item-3464" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3464"><a href="./slozhenie_i_vychitanie-racionalnyh_chisel.html">Шаг 36. Сложение и вычитание рациональных чисел</a></li>
+					<li id="menu-item-4044" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4044"><a href="./umnozhenie-i-delenie-ratsionalnyh-chisel.html">Шаг 37. Умножение и деление рациональных чисел</a></li>
+					<li id="menu-item-4139" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4139"><a href="./dopolnitelnye-svedeniya-o-drobyah.html">Шаг 38. Дополнительные сведения о дробях</a></li>
+					<li id="menu-item-5035" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5035"><a href="./bukvennye-vyrazheniya.html">Шаг 39. Буквенные выражения</a></li>
+					<li id="menu-item-5175" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5175"><a href="./vynesenie-obshhego-mnozhitelya-za-skobki.html">Шаг 40. Вынесение общего множителя за скобки</a></li>
+					<li id="menu-item-5176" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5176"><a href="./raskrytie-skobok.html">Шаг 41. Раскрытие скобок</a></li>
+					<li id="menu-item-5636" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5636"><a href="./prostejshie-zadachi-po-matematike.html">Шаг 42. Простейшие задачи по математике</a></li>
+					<li id="menu-item-5637" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5637"><a href="./zadachi-na-drobi.html">Шаг 43. Задачи на дроби</a></li>
+					<li id="menu-item-5638" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5638"><a href="./zadachi-na-protsenty.html">Шаг 44. Задачи на проценты</a></li>
+					<li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5639"><a href="./zadachi-na-dvizhenie.html">Шаг 45. Задачи на движение</a></li>
+					<li id="menu-item-5640" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5640"><a href="./proizvoditelnost.html">Шаг 46. Производительность</a></li>
+					<li id="menu-item-5641" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5641"><a href="./elementy-statistiki.html">Шаг 47. Элементы статистики</a></li>
+					<li id="menu-item-7737" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7737"><a href="./obshhie-svedeniya-ob-uravneniyah.html">Шаг 48. Общие сведения об уравнениях</a></li>
+					<li id="menu-item-7752" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7752"><a href="./reshenie-zadach-s-pomoshhyu-uravnenij.html">Шаг 49. Решение задач с помощью уравнений</a></li>
+					<li id="menu-item-7760" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7760"><a href="./reshenie-zadach-s-pomoshhyu-proportsii.html">Шаг 50. Решение задач с помощью пропорции</a></li>
+					<li id="menu-item-7761" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7761"><a href="./sistemy-linejnyh-uravnenij.html">Шаг 51. Системы линейных уравнений</a></li>
+					<li id="menu-item-8777" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8777"><a href="./obshhie-svedeniya-o-neravenstvah.html">Шаг 52. Общие сведения о неравенствах</a></li>
+					<li id="menu-item-8848" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8848"><a href="./sistemy-linejnyh-neravenstv-s-odnoj-peremennoj.html">Шаг 53. Системы линейных неравенств с одной переменной</a></li>
+					<li id="menu-item-8852" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8852"><a href="./operatsii-nad-mnozhestvami.html">Шаг 54. Операции над множествами</a></li>
+					<li id="menu-item-9929" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9929"><a href="./stepen-s-naturalnym-pokazatelem.html">Шаг 55. Степень с натуральным показателем</a></li>
+					<li id="menu-item-9956" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9956"><a href="./stepen-s-tselym-pokazatelem.html">Шаг 56. Степень с целым показателем</a></li>
+					<li id="menu-item-9965" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9965"><a href="./perimetr-ploshhad-i-obyom.html">Шаг 57. Периметр, площадь и объём</a></li>
+					<li id="menu-item-10019" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10019"><a href="./odnochleny.html">Шаг 58. Одночлены</a></li>
+					<li id="menu-item-10538" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10538"><a href="./mnogochleny.html">Шаг 59. Многочлены</a></li>
+					<li id="menu-item-10539" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10539"><a href="./formuly-sokrashhennogo-umnozheniya.html">Шаг 60. Формулы сокращённого умножения</a></li>
+					<li id="menu-item-10540" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10540"><a href="./razlozhenie-mnogochlena-na-mnozhiteli.html">Шаг 61. Разложение многочлена на множители</a></li>
+					<li id="menu-item-10541" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10541"><a href="./delenie-mnogochlenov.html">Шаг 62. Деление многочленов</a></li>
+					<li id="menu-item-10542" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-10542"><a href="./tozhdestvennye-preobrazovaniya-mnogochlenov.html">Шаг 63. Тождественные преобразования многочленов</a></li>
+					<li id="menu-item-11033" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11033"><a href="./kvadratnyj-koren.html">Шаг 64. Квадратный корень</a></li>
+					<li id="menu-item-11041" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11041"><a href="./algoritm-izvlecheniya-kvadratnogo-kornya.html">Шаг 65. Алгоритм извлечения квадратного корня</a></li>
+					<li id="menu-item-11548" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11548"><a href="./kvadratnoe-uravnenie.html">Шаг 66. Квадратное уравнение</a></li>
+					<li id="menu-item-11578" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11578"><a href="./kvadratnoe-uravnenie-s-chyotnym-vtorym-koeffitsientom.html">Шаг 67. Квадратное уравнение с чётным вторым коэффициентом</a></li>
+					<li id="menu-item-11651" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11651"><a href="./teorema-vieta.html">Шаг 68. Теорема Виета</a></li>
+					<li id="menu-item-11845" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11845"><a href="./razlozhenie-kvadratnogo-tryohchlena-na-mnozhiteli.html">Шаг 69. Разложение квадратного трёхчлена на множители</a></li>
+					<li id="menu-item-12274" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12274"><a href="./obobshhyonnoe-ponyatie-modulya-chisla.html">Шаг 70. Обобщённое понятие модуля числа</a></li>
+					<li id="menu-item-12647" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12647"><a href="./uravnenie-s-modulem.html">Шаг 71. Уравнение с модулем</a></li>
+					<li id="menu-item-12671" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12671"><a href="./reshenie-uravnenij-s-modulem-metodom-intervalov.html">Шаг 72. Решение уравнений с модулем методом интервалов</a></li>
+					<li id="menu-item-12847" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12847"><a href="./neravenstva-s-modulem.html">Шаг 73. Неравенства с модулем</a></li>
+					<li id="menu-item-12866" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12866"><a href="./reshenie-neravenstv-s-modulem-metodom-intervalov.html">Шаг 74. Решение неравенств с модулем методом интервалов</a></li>
+					<li id="menu-item-12915" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-12915"><a href="./izvlechenie-kvadratnogo-kornya-iz-obeih-chastej-uravneniya.html">Шаг 75. Извлечение квадратного корня из обеих частей уравнения</a></li>
+</ul></div>			</nav>
+		
+		
+		
+	</div>
+
+	</div>
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-152" class="post-152 post type-post status-publish format-standard hentry category-bez-rubriki">
+	
+	
+	<header class="entry-header">
+      
+      
+      <div style="margin-bottom:40px; margin-top:0; "> 
+       
+</script>
+    </div>
+
+	
+	
+	
+		<h1 class="entry-title">Разряды для начинающих</h1>      
+
+      
+	</header>
+
+	<div class="entry-content">
+		<p>Наш первый урок назывался числа. Мы рассмотрели лишь малую часть этой темы. На самом деле тема чисел достаточно обширна. В ней много тонкостей и нюансов, много хитростей и интересных фишек.</p>
+<p>Сегодня мы продолжим тему чисел, но опять же не будем рассматривать её всю, чтобы не затруднять обучение лишней информацией, которая на первых порах не особо-то и нужна. Мы поговорим о разрядах.</p>
+<nav id="menu"><b>Содержание урока</b></p>
+<ul class="navless">
+<li><a href="#yak1">Что такое разряд?</a></li>
+<li><a href="#yak2">Группировка предметов</a></li>
+<li><a href="#yak3">Где применить разряды?</a></li>
+<li><a href="#yak4">Переполнение разряда</a></li>
+<li><a href="#yak5">Сложение в столбик</a></li>
+<li><a href="#yak6">Вычитание в столбик</a></li>
+<li><a href="#yak7">Задания для самостоятельного решения</a></li>
+</ul>
+</nav>
+<h2 id="yak1" style="text-align: center;">Что такое разряд?</h2>
+<p>Если говорить простым языком, то разряд это позиция цифры в числе или место, где располагается цифра. Возьмём для примера число 635. Это число состоит из трёх цифр: 6, 3 и 5.</p>
+<p>Разряды надо читать справа налево. В числе 635 на первой позиции располагается цифра 5, на второй позиции – цифра 3, на третьей позиции – цифра 6.</p>
+<p>Позиция, где располагается цифра 5, называется <strong>разрядом единиц</strong></p>
+<p>Позиция, где располагается цифра 3, называется <strong>разрядом десятков</strong></p>
+<p>Позиция, где располагается цифра 6, называется <strong>разрядом сотен</strong></p>
+<p><img decoding="async" class="size-full wp-image-6843 aligncenter" src="./chislo-635.png" alt="число 635" width="267" height="197" /></p>
+<p>Каждый из нас слышал со школы такие вещи как «единицы», «десятки», «сотни». Разряды помимо того что играют роль позиции цифры в числе, сообщают нам некоторую информацию о самом числе. В частности, разряды сообщают нам вес числа. Они сообщают сколько в числе единиц, сколько десятков и сколько сотен.</p>
+<p>Вернёмся к нашему числу 635. В разряде единиц располагается пятёрка. О чём это говорит? А говорит это о том, что разряд единиц содержит пять единичек. Выглядит это так:</p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-6407" src="./pyat-edinits-chisla-635.png" alt="пять единиц числа 635" width="310" height="104" srcset="./pyat-edinits-chisla-635.png 310w, ./pyat-edinits-chisla-635-300x101.png 300w" sizes="(max-width: 310px) 100vw, 310px" /></p>
+<p style="text-align: left;">В разряде десятков располагается тройка. Это говорит о том, что разряд десятков содержит три десятка. Выглядит это так:</p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-6408" src="./tri-desyatka-chisla-635.png" alt="три десятка числа 635" width="258" height="97" /></p>
+<p>В разряде сотен располагается шестёрка. Это говорит о том, что в разряде сотен располагаются шесть сотен. Выглядит это так:</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="size-full wp-image-6409 aligncenter" src="./shest-soten-chisla-635.png" alt="шесть сотен числа 635" width="606" height="101" srcset="./shest-soten-chisla-635.png 606w, ./shest-soten-chisla-635-300x50.png 300w" sizes="(max-width: 606px) 100vw, 606px" /></p>
+<p>Если сложить число получившихся единиц, число десятков и число сотен, то получим наше изначальное число 635</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6410" src="./slozhenie-edinits-desyatkov-i-soten-635.png" alt="сложение единиц десятков и сотен 635" width="277" height="22" /></p>
+<p>Существуют и более старшие разряды такие как разряд тысяч, разряд десятков тысяч, разряд сотен тысяч,  разряд миллионов и так далее. Такие большие числа мы будем рассматривать редко, но тем не менее о них тоже желательно знать.</p>
+<p>Например, в числе 1 645 832 разряд единиц содержит 2 единицы, разряд десятков &#8212; 3 десятка, разряд сотен &#8212; 8 сотен, разряд тысяч &#8212; 5 тысяч, разряд десятков тысяч &#8212; 4 десятка тысяч, разряд сотен тысяч &#8212; 6 сотен тысяч, разряд миллионов &#8212; 1 миллион.</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6800 size-full aligncenter" src="./1645832-razryady.png" alt="1645832 разряды" width="659" height="177" srcset="./1645832-razryady.png 659w, ./1645832-razryady-300x81.png 300w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>На первых этапах изучения разрядов желательно разбираться сколько единиц, десятков, сотен содержит то или иное число. К примеру, число 9 содержит 9 единиц. Число 12 содержит две единицы и один десяток. Число 123 содержит три единицы, два десятка и одну сотню.</p>
+<hr />
+<h2 id="yak2" style="text-align: center;">Группировка предметов</h2>
+<p>После подсчета каких-нибудь предметов, разряды можно использовать для группировки этих предметов. К примеру, если мы насчитали во дворе 35 кирпичей, то можно использовать разряды для группировки этих кирпичей. В случае группировки предметов, разряды можно читать слева направо. Так, цифра 3 в числе 35 будет говорить о том, что в числе 35 содержатся три десятка. А это значит, что 35 кирпичей можно сгруппировать три раза по десять штук.</p>
+<p>Итак, сгруппируем кирпичи три раза по десять штук:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6771 aligncenter" src="./35-kirpichej-pervyj-tri-desyatka.png" alt="35 кирпичей первый три десятка" width="610" height="428" srcset="./35-kirpichej-pervyj-tri-desyatka.png 610w, ./35-kirpichej-pervyj-tri-desyatka-300x210.png 300w" sizes="(max-width: 610px) 100vw, 610px" /></p>
+<p>Получилось тридцать кирпичей. Но осталось еще пять единиц кирпичей. Их мы назовем как <span style="color: #000000;"><em>&#171;пять единиц&#187;</em></span></p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6772 aligncenter" src="./35-kirpichej-pyat-edinits.png" alt="35 кирпичей пять единиц" width="304" height="115" srcset="./35-kirpichej-pyat-edinits.png 304w, ./35-kirpichej-pyat-edinits-300x113.png 300w" sizes="(max-width: 304px) 100vw, 304px" /></p>
+<p>Получилось три десятка и пять единиц кирпичей.</p>
+<p>А если бы мы не стали группировать кирпичи на десятки и единицы, то можно было бы сказать, что число 35 содержит тридцать пять единиц. Такая группировка тоже была бы допустимой:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6773 aligncenter" src="./35-kirpichej-v-edinitsah.png" alt="35 кирпичей в единицах" width="610" height="327" srcset="./35-kirpichej-v-edinitsah.png 610w, ./35-kirpichej-v-edinitsah-300x161.png 300w" sizes="(max-width: 610px) 100vw, 610px" /></p>
+<p>Аналогично можно рассуждать и про другие числа. К примеру, о числе 123. Ранее мы сказали, что это число содержит три единицы, два десятка и одну сотню. Но можно ещё сказать, что это число  содержит 123 единицы. Более того, можно сгруппировать это число и другим образом, сказав что оно содержит 12 десятков и 3 единицы.</p>
+<p>Слова <em>единицы</em>, <em>десятки</em>, <em>сотни</em>, заменяют собой множимые 1, 10 и 100. К примеру, в разряде единиц числа 123 располагается цифра 3. С помощью множимого 1 можно записать, что эта единица содержится в разряде единиц три раза:</p>
+<p style="text-align: center;"><span style="color: #000000;">1 × 3 = 3</span></p>
+<p>Далее в разряде десятков числа 123 располагается цифра 2. С помощью множимого 10 можно записать, что эта десятка содержится в разряде десятков два раза:</p>
+<p style="text-align: center;"><span style="color: #000000;">10 × 2 = 20</span></p>
+<p>Далее в разряде сотен числа 123 располагается цифра 1. С помощью множимого 100 можно записать, что эта сотня содержится в разряде сотен один раз:</p>
+<p style="text-align: center;"><span style="color: #000000;">100 × 1 = 100</span></p>
+<p>Если сложить полученные результаты 3, 20 и 100, то получим число 123</p>
+<p style="text-align: center;"><span style="color: #000000;">3 + 20 + 100 = 123</span></p>
+<p>То же самое будет происходить если мы скажем, что число 123 содержит 12 десятков и 3 единицы. Другими словами, десятки будут сгруппированы 12 раз:</p>
+<p style="text-align: center;"><span style="color: #000000;">10 × 12 = 120</span></p>
+<p>А единицы три раза:</p>
+<p style="text-align: center;"><span style="color: #000000;">1 × 3 = 3</span></p>
+<p>Это можно понять на следующем примере. Если имеется 123 яблока, то можно сгруппировать первые 120 яблок 12 раз по 10 штук:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6775 aligncenter" src="./dvenadtsat-desyatkov-yablok.png" alt="двенадцать десятков яблок" width="613" height="650" srcset="./dvenadtsat-desyatkov-yablok.png 613w, ./dvenadtsat-desyatkov-yablok-283x300.png 283w" sizes="(max-width: 613px) 100vw, 613px" /></p>
+<p>Получилось сто двадцать яблок. Но осталось еще три яблока. Их мы назовем как <span style="color: #000000;"><em>&#171;три единицы&#187;</em></span></p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6776 aligncenter" src="./3-edinitsy-yabloka.png" alt="3 единицы яблока" width="372" height="162" srcset="./3-edinitsy-yabloka.png 372w, ./3-edinitsy-yabloka-300x131.png 300w" sizes="(max-width: 372px) 100vw, 372px" /></p>
+<p>Если сложить полученные результаты 120 и 3, снова получим число 123</p>
+<p style="text-align: center;"><span style="color: #000000;">120 + 3 = 123</span></p>
+<p>Ещё можно сгруппировать 123 яблока на одну сотню, два десятка и три единицы.</p>
+<p>Сгруппируем сотню:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6871 aligncenter" src="./odna-sotnya-yablok.png" alt="одна сотня яблок" width="368" height="573" srcset="./odna-sotnya-yablok.png 368w, ./odna-sotnya-yablok-193x300.png 193w" sizes="(max-width: 368px) 100vw, 368px" /></p>
+<p>Сгруппируем два десятка:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6872 aligncenter" src="./dva-desyatka-yablok.png" alt="два десятка яблок" width="366" height="237" srcset="./dva-desyatka-yablok.png 366w, ./dva-desyatka-yablok-300x194.png 300w" sizes="(max-width: 366px) 100vw, 366px" /></p>
+<p>Сгруппируем три единицы:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6776 aligncenter" src="./3-edinitsy-yabloka.png" alt="3 единицы яблока" width="372" height="162" srcset="./3-edinitsy-yabloka.png 372w, ./3-edinitsy-yabloka-300x131.png 300w" sizes="(max-width: 372px) 100vw, 372px" /></p>
+<p>Если сложить полученные результаты 100, 20 и 3, снова получим число 123</p>
+<p style="text-align: center;"><span style="color: #000000;">100 + 20 + 3 = 123</span></p>
+<p>Ну и наконец, рассмотрим последнюю возможную группировку, где яблоки не будут распределяться на десятки и сотни, а будут собраны вместе. В таком случае число 123 будет читаться как <span style="color: #000000;"><em>&#171;сто двадцать три единицы&#187;</em></span>. Такая группировка тоже будет допустимой:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6777 aligncenter" src="./123-edinits-yabloka.png" alt="123 единиц яблока" width="371" height="730" srcset="./123-edinits-yabloka.png 371w, ./123-edinits-yabloka-152x300.png 152w" sizes="(max-width: 371px) 100vw, 371px" /></p>
+<p style="text-align: center;"><span style="color: #000000;">1 × 123 = 123</span></p>
+<hr />
+<p><strong>Пример 3</strong>. Прочитать число 523 всеми возможными способами.</p>
+<p>Число 523 можно прочесть, как 3 единицы, 2 десятка и 5 сотен:</p>
+<p style="text-align: center;"><span style="color: #000000;">1 × 3 = 3 (три единицы)</span></p>
+<p style="text-align: center;"><span style="color: #000000;">10 × 2 = 20 (два десятка)</span></p>
+<p style="text-align: center;"><span style="color: #000000;">100 × 5 = 500 (пять сотен)</span></p>
+<p style="text-align: center;"><span style="color: #000000;">3 + 20 + 500 = 523</span></p>
+<p>Ещё  можно прочесть, как 3 единицы 52 десятка:</p>
+<p style="text-align: center;"><span style="color: #000000;">1 × 3 = 3 (три единицы)</span></p>
+<p style="text-align: center;"><span style="color: #000000;">10 × 52 = 520 (пятьдесят два десятка)</span></p>
+<p style="text-align: center;"><span style="color: #000000;">3 + 520 = 523</span></p>
+<p>Ещё число 523 можно прочесть, как 523 единицы:</p>
+<p style="text-align: center;"><span style="color: #000000;">1 × 523 = 523 (пятьсот двадцать три единицы)</span></p>
+<hr />
+<h2 id="yak3" style="text-align: center;">Где применить разряды?</h2>
+<p>Разряды существенно облегчают некоторые вычисления. Представьте, что вы у доски и решаете задачу. Вы почти закончили задачу, осталось только вычислить последнее выражение и получить ответ. Выражение, которое надо вычислить, выглядит следующим образом:</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6419" src="./632-plus-264-step-1.png" alt="632 plus 264 step 1" width="236" height="22" /></p>
+<p>Калькулятора под рукой нет, а хочется быстро записать ответ и удивить всех скоростью своих вычислений. Всё просто, если отдельно сложить единицы, отдельно десятки и отдельно сотни. Начинать нужно с разряда единиц. В первую очередь после знака равно (=) необходимо мысленно поставить три точки. Вместо этих точек будет располагаться новое число (наш ответ):</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6421" src="./632-plus-264-step-2.png" alt="632 plus 264 step 2" width="236" height="22" /></p>
+<p>Теперь начинаем складывать. В разряде единиц числа 632 располагается цифра 2, а в разряде единиц числа 264 &#8212; цифра 4. Это означает, разряд единиц числа 632 содержит две единицы, а разряд единиц числа 264 содержит четыре единицы. Складываем 2 и 4 единицы &#8212; получаем 6 единиц. Записываем цифру 6 в разряде единиц нового числа (нашего ответа):</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6422" src="./632-plus-264-step-3.png" alt="632 plus 264 step 3" width="236" height="22" /></p>
+<p>Далее складываем десятки. В разряде десятков числа 632 располагается цифра 3, а в разряде десятков числа 264 &#8212; цифра 6. Это означает, что разряд десятков числа 632 содержит три десятка, а разряд десятков числа 264 содержит шесть десятков. Складываем 3 и 6 десятков &#8212; получаем 9 десятков. Записываем цифру 9 в разряде десятков нового числа (нашего ответа):</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6423" src="./632-plus-264-step-4.png" alt="632 plus 264 step 4" width="236" height="22" /></p>
+<p>Ну и в завершении складываем отдельно сотни. В разряде сотен числа 632 располагается цифра 6, а в разряде сотен числа 264 &#8212; цифра 2. Это означает, что разряд сотен числа 632 содержит шесть сотен, а разряд сотен числа 264 содержит две сотни. Складываем 6 и 2 сотни, получаем 8 сотен. Записываем цифру 8 в разряде сотен нового числа (нашего ответа):</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6424" src="./632-plus-264-step-5.png" alt="632 plus 264 step 5" width="236" height="22" /></p>
+<p>Таким образом, если к числу 632 прибавить 264, получается 896. Конечно, вы вычислите подобное выражение быстрее и окружающие начнут удивляться вашим способностям. Они будут думать, что вы быстро вычисляете большие числа, а на самом деле вы вычисляли маленькие. Согласитесь, что маленькие числа вычислять легче, чем большие.</p>
+<hr />
+<h2 id="yak4" style="text-align: center;">Переполнение разряда</h2>
+<p>Разряд характеризуется одной цифрой от 0 до 9. Но иногда при вычислении числового выражения в середине решения может произойти переполнение разряда.</p>
+<p>Например, при сложении чисел 32 и 14 переполнения не происходит. Сложение единиц этих чисел даст 6 единиц в новом числе. А сложение десятков этих чисел даст 4 десятка в новом числе. Получится ответ 46 или <span style="color: #000000;"><em>шесть единиц и четыре десятка</em></span>.</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6780 aligncenter" src="./32-plyus-14-ravno-46.png" alt="" width="184" height="22" /></p>
+<p>А вот при сложении чисел 29 и 13 произойдёт переполнение. Сложение единиц этих чисел даёт 12 единиц, а сложение десятков 3 десятка. Если в новом числе в разряде единиц записать полученные 12 единиц, а в разряде десятков записать полученные 3 десятка, то получится ошибка:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6782 size-full aligncenter" src="./29-plyus-13-shag-1.png" alt="29 плюс 13 шаг 1" width="246" height="74" /></p>
+<p>Значение выражения <span style="color: #000000;">29 + 13</span> равно <span style="color: #000000;">42</span>, а не <span style="color: #000000;">312</span>. Как же следует поступать при переполнении? В нашем случае переполнение случилось в разряде единиц нового числа. При сложении девяти и трёх единиц у нас получилось 12 единиц. А в разряд единиц можно записывать только цифры в диапазоне от 0 до 9.</p>
+<p>Дело в том, что 12 единиц это не просто <em><span style="color: #000000;">&#171;двенадцать единиц&#187;</span></em>. По другому это число можно прочитать как <span style="color: #000000;"><em>&#171;две единицы и один десяток&#187;</em></span>. Разряд единиц предназначен только для единиц. Десяткам там не место. Здесь и заключается наша ошибка. Сложив 9 единиц и 3 единицы мы получили 12 единиц, которые по-другому можно назвать двумя единицами и одним десятком. Записав две единицы и один десяток в одном разряде, мы допустили ошибку, которая в итоге привела к неправильному ответу.</p>
+<p>Чтобы исправить ситуацию, две единицы нужно записать в разряде единиц нового числа, а оставшийся десяток перенести на следующий разряд десятков. После сложения десятков в примере <span style="color: #000000;">29 + 13</span>, мы прибавим к полученному результату тот десяток, который остался при сложении единиц.</p>
+<p>Итак, из 12 единиц две единицы запишем в разряде единиц нового числа, а один десяток перенесем на следующий разряд</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6783 aligncenter" src="./29-plyus-13-shag-2.png" alt="29 плюс 13 шаг 2" width="636" height="336" srcset="./29-plyus-13-shag-2.png 636w, ./29-plyus-13-shag-2-300x158.png 300w" sizes="(max-width: 636px) 100vw, 636px" /></p>
+<p>Как видно на рисунке, 12 единиц мы представили как 1 десяток и 2 единицы. Две единицы мы записали в разряде единиц нового числа. А один десяток перенесли к разрядам десятков. Этот десяток мы прибавим к результату сложения десятков чисел 29 и 13. Чтобы не забыть о нем, мы надписали его над десятками числа 29.</p>
+<p>Теперь складываем десятки. Два десятка плюс один десяток будет три десятка, плюс один десяток, который остался от предыдущего сложения. В результате в разряде десятков получаем четыре десятка:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6784 aligncenter" src="./29-plyus-13-shag-3.png" alt="29 плюс 13 шаг 3" width="185" height="22" /></p>
+<hr />
+<p><strong>Пример 2</strong>. Сложить по разрядам числа 862 и 372.</p>
+<p>Начинаем с разряда единиц. В разряде единиц числа 862 располагается цифра 2, в разряде единиц числа 372 &#8212; также цифра 2. Это означает, что разряд единиц числа 862 содержит две единицы, и разряд единиц числа 372 также содержит две единицы. Складываем 2 единицы плюс 2 единицы &#8212; получаем 4 единицы. Записываем цифру 4 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6769 aligncenter" src="./862-plyus-372-step-1.png" alt="862 плюс 372 step 1" width="242" height="22" /></p>
+<p>Далее складываем десятки. В разряде десятков числа 862 располагается цифра 6, а в разряде десятков числа 372 &#8212; число 7. Это означает, что разряд десятков числа 862 содержит шесть десятков, а разряд десятков числа 372 содержит семь десятков. Складываем 6 десятков и 7 десятков &#8212; получаем 13 десятков. Произошло переполнение разряда. 13 десятков это десятка повторенная 13 раз. А если повторить десятку 13 раз, то получится число 130</p>
+<p style="text-align: center;"><span style="color: #000000;">10 × 13 = 130</span></p>
+<p>Число 130 состоит из трех десятков и одной сотни. Три десятка мы запишем в разряде десятков нового числа, а одну сотню отправим на следующий разряд:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6786 size-full aligncenter" src="./862-plyus-372-step-2.png" alt="862 плюс 372 step 2" width="578" height="241" srcset="./862-plyus-372-step-2.png 578w, ./862-plyus-372-step-2-300x125.png 300w" sizes="(max-width: 578px) 100vw, 578px" /></p>
+<p>Как видно на рисунке, 13 десятков (число 130) мы представили как 1 сотню и 3 десятка. Три десятка мы записали в разряде десятков нового числа. А одну сотню перенесли к разрядам сотен. Эту сотню мы прибавим к результату сложения сотен чисел 862 и 372. Чтобы не забыть о ней, мы надписали её над сотнями числа 862.</p>
+<p>Теперь складываем сотни. Восемь сотен плюс три сотни будет одиннадцать сотен плюс одна сотня, которая осталась от предыдущего сложения. В результате в разряде сотен получаем двенадцать сотен:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6787 aligncenter" src="./862-plyus-372-step-3.png" alt="862 плюс 372 step 3" width="253" height="22" /></p>
+<p>Здесь также происходит переполнение разряда сотен, но это не приводит к ошибке, поскольку решение завершено. При желании с 12 сотнями можно провести те же действия, что мы провели с 13 десятками.</p>
+<p>12 сотен это сотня, повторенная 12 раз. А если повторить сотню 12 раз, то получится 1200</p>
+<p style="text-align: center;"><span style="color: #000000;">100 × 12 = 1200</span></p>
+<p>В числе 1200 две сотни и одна тысяча. Две сотни записываются в разряд сотен нового числа, а одна тысяча перенеслась к разряду тысяч.</p>
+<hr />
+<p>Теперь рассмотрим примеры на вычитание. Для начала вспомним, что такое вычитание. Это операция, которая позволяет от одного числа вычесть другое. Вычитание состоит из трёх параметров: уменьшаемого, вычитаемого и разности. Вычитать тоже нужно по разрядам.</p>
+<p><strong>Пример 3</strong>. Вычесть из числа 65 число 12.</p>
+<p>Начинаем с разряда единиц. В разряде единиц числа 65 располагается цифра 5, а в разряде единиц числа 12 &#8212; цифра 2. Это означает, что разряд единиц числа 65 содержит пять единиц, а разряд единиц числа 12 содержит две единицы. Вычтем из пяти единиц две единицы, получим три единицы. Записываем цифру 3 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6798 aligncenter" src="./65-minus-12-shag-1.png" alt="65 минус 12 шаг 1" width="187" height="22" /></p>
+<p>Теперь вычитаем десятки. В разряде десятков числа 65 располагается цифра 6, а в разряде десятков числа 12 &#8212; цифра 1. Это означает, что разряд десятков числа 65 содержит шесть десятков, а разряд десятков числа 12 содержит один десяток. Вычтем из шести десятков один десяток, получим пять десятков. Записываем цифру 5 в разряде десятков нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6799 aligncenter" src="./65-minus-12-shag-2.png" alt="65 минус 12 шаг 2" width="184" height="22" /></p>
+<hr />
+<p><strong><span id="trad_method">Пример 4</span></strong>. Вычесть из числа 32 число 15</p>
+<p>В разряде единиц числа 32 содержится две единицы, а в разряде единиц числа 15 &#8212; пять единиц. От двух единиц не вычесть пять единиц, поскольку две единицы меньше, чем пять единиц.</p>
+<p>Сгруппируем 32 яблока так, чтобы в первой группе было три десятка яблок, а во второй &#8212; оставшиеся две единицы яблок:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6802 size-full aligncenter" src="./32-minus-15-step-1.png" alt="32 минус 15 step 1" width="588" height="356" srcset="./32-minus-15-step-1.png 588w, ./32-minus-15-step-1-300x182.png 300w" sizes="(max-width: 588px) 100vw, 588px" /></p>
+<p>Итак, нам нужно из этих 32 яблок вычесть 15 яблок, то есть вычесть пять единиц и один десяток яблок. Причем вычесть по разрядам.</p>
+<p>От двух единиц яблок нельзя вычесть пять единиц яблок. Чтобы выполнить вычитание, две единицы должны взять несколько яблок у соседней группы (разряда десятков). Но нельзя брать сколько хочется, поскольку десятки строго упорядочены по десять штук. Разряд десятков может дать двум единицам только один целый десяток.</p>
+<p>Итак, берём один десяток из разряда десятков и отдаём его двум единицам:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6804 aligncenter" src="./32-minus-15-step-2.png" alt="32 минус 15 step 2" width="659" height="357" srcset="./32-minus-15-step-2.png 659w, ./32-minus-15-step-2-300x163.png 300w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>К двум единицам яблок теперь присоединился один десяток яблок. Получается 12 единиц яблок. А от двенадцати можно вычесть пять, получится семь. Записываем цифру 7 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6805 aligncenter" src="./32-minus-15-step-3.png" alt="32 минус 15 step 3" width="188" height="22" /></p>
+<p>Теперь вычитаем десятки. Поскольку разряд десятков отдал единицам один десяток, сейчас он имеет не три, а два десятка. Поэтому вычитаем из двух десятков один десяток. Останется один десяток. Записываем цифру 1 в разряде десятков нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6806 aligncenter" src="./32-minus-15-step-4.png" alt="32 минус 15 step 4" width="183" height="22" /></p>
+<p>Чтобы не забывать, что в каком-то разряде был взят один десяток (либо сотня либо тысяча), над этим разрядом принято ставить точку.</p>
+<hr />
+<p><strong>Пример 5</strong>. Вычесть из числа 653 число 286</p>
+<p>В разряде единиц числа 653 содержится три единицы, а в разряде единиц числа 286 &#8212; шесть единиц. От трёх единиц не вычесть шесть единиц, поэтому берем один десяток у разряда десятков. Ставим точку над разрядом десятков, чтобы помнить о том, что мы взяли оттуда один десяток:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6809 size-full aligncenter" src="./653-minus-286-step-2.png" alt="653 минус 286 step 2" width="234" height="31" /></p>
+<p>Взятый один десяток и три единицы вместе образуют тринадцать единиц. От тринадцати единиц можно вычесть шесть единиц, получится семь единиц. Записываем цифру 7 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6811 size-full aligncenter" src="./653-minus-286-step-3.png" alt="653 минус 286 step 3" width="243" height="31" /></p>
+<p>Теперь вычитаем десятки. Раньше разряд десятков числа 653 содержал пять десятков, но мы взяли с него один десяток, и теперь в разряде десятков содержатся четыре десятка. Из четырех десятков не вычесть восемь десятков, поэтому берем одну сотню у разряда сотен. Ставим точку над разрядом сотен, чтобы помнить о том, что мы взяли оттуда одну сотню:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6812 aligncenter" src="./653-minus-286-step-4.png" alt="653 минус 286 step 4" width="243" height="31" /></p>
+<p>Взятая одна сотня и четыре десятка вместе образуют четырнадцать десятков. От четырнадцати десятков можно вычесть восемь десятков, получится шесть десятков. Записываем цифру 6 в разряде десятков нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6813 aligncenter" src="./653-minus-286-step-5.png" alt="653 минус 286 step 5" width="240" height="31" /></p>
+<p>Теперь вычитаем сотни. Раньше разряд сотен числа 653 содержал шесть сотен, но мы взяли с него одну сотню, и теперь в разряде сотен содержатся пять сотен. Из пяти сотен можно вычесть две сотни, получается три сотни. Записываем цифру 3 в разряде сотен нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6814 aligncenter" src="./653-minus-286-step-6.png" alt="653 минус 286 step 6" width="237" height="31" /></p>
+<p>Намного сложнее вычитать из чисел вида 100, 200, 300, 1000, 10000. То есть числа, у которых на конце нули. Чтобы выполнить вычитание, каждому разряду приходится занимать десятки/сотни/ тысячи у следующего разряда. Давайте посмотрим, как это происходит.</p>
+<p><strong>Пример 6</strong>. Вычесть из числа 200 число 84</p>
+<p>В разряде единиц числа 200 содержится ноль единиц, а в разряде единиц числа 84 &#8212; четыре единицы. От нуля не вычесть четыре единицы, поэтому берем один десяток у разряда десятков. Ставим точку над разрядом десятков, чтобы помнить о том, что мы взяли оттуда один десяток:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6819 size-full aligncenter" src="./200-minus-84-step-1.png" alt="200 минус 84 step 1" width="216" height="30" /></p>
+<p>Но в разряде десятков нет десятков, которые мы могли бы взять, поскольку там тоже ноль. Чтобы разряд десятков смог дать нам один десяток, мы должны взять для него одну сотню у разряда сотен. Ставим точку над разрядом сотен, чтобы помнить о том, что мы взяли оттуда одну сотню для разряда десятков:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6820 size-full aligncenter" src="./200-minus-84-step-2.png" alt="200 минус 84 step 2" width="216" height="30" /></p>
+<p>Взятая одна сотня это десять десятков. От этих десяти десятков мы берём один десяток и отдаём его единицам. Этот взятый один десяток и прежние ноль единиц вместе образуют десять единиц. От десяти единиц можно вычесть четыре единицы, получится шесть единиц. Записываем цифру 6 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6821 size-full aligncenter" src="./200-minus-84-step-3.png" alt="200 минус 84 step 3" width="225" height="30" /></p>
+<p>Теперь вычитаем десятки. Чтобы вычесть единицы мы обратились к разряду десятков за одним десятком, но на тот момент этот разряд был пуст. Чтобы разряд десятков смог дать нам один десяток, мы взяли одну сотню у разряда сотен. Эту одну сотню мы назвали <span style="color: #000000;"><em>&#171;десять десятков&#187;</em></span>. Один десяток мы отдали единицам. Значит на данный момент в разряде десятков содержатся не десять, а девять десятков. От девяти десятков можно вычесть восемь десятков, получится один десяток. Записываем цифру 1 в разряде десятков нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6818 aligncenter" src="./200-minus-84-step-4.png" alt="200 минус 84 step 4" width="222" height="30" /></p>
+<p>Теперь вычитаем сотни. Для разряда десятков мы брали у разряда сотен одну сотню. Значит сейчас в разряде сотен содержатся не две сотни, а одна. Поскольку в вычитаемом разряд сотен отсутствует, мы переносим эту одну сотню в разряд сотен нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6822 aligncenter" src="./200-minus-84-step-4-1.png" alt="" width="216" height="30" /></p>
+<p>Получили окончательный ответ 116.</p>
+<p>Естественно, выполнять вычитание таким традиционным методом довольно сложно, особенно на первых порах. Поняв сам принцип вычитания, можно воспользоваться нестандартными способами.</p>
+<p>Первый способ заключается в том, чтобы уменьшить число, у которого на конце нули на одну единицу. Далее из полученного результата вычесть вычитаемое и к полученной разности прибавить единицу, которую изначально вычли из уменьшаемого. Давайте решим предыдущий пример этим способом:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6823 aligncenter" src="./200-minus-84-method-2-step-1.png" alt="200 минус 84 method 2 step 1" width="216" height="22" /></p>
+<p>Уменьшаемое здесь это число 200. Уменьшим это число на единицу. Если от 200 вычесть 1 получится 199. Теперь в примере <span style="color: #000000;">200 − 84</span> вместо числа 200 записываем число 199 и решаем пример <span style="color: #000000;">199 − 84</span>. А решение этого примера не составляет особого труда. Единицы вычтем из единиц, десятки из десятков, а сотню просто перенесем к новому числу, поскольку в числе 84 нет сотен:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6828 aligncenter" src="./200-minus-84-metod-3-step-1.png" alt="200 минус 84 метод 3 step 1" width="217" height="22" /></p>
+<p>Получили ответ 115. Теперь к этому ответу прибавляем единицу, которую мы изначально вычли из числа 200</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6829 aligncenter" src="./200-minus-84-metod-3-step-2.png" alt="200 минус 84 метод 3 step 2" width="201" height="22" /></p>
+<p>Получили окончательный ответ 116.</p>
+<hr />
+<p><strong>Пример 7</strong>. Вычесть из числа 100000 число 91899</p>
+<p>Вычтем из 100000 единицу, получим 99999</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6830 aligncenter" src="./100000-minus-91899-method-2-step-1.png" alt="100000 минус 91899 method 2 step 1" width="288" height="22" /></p>
+<p>Теперь из 99999 вычитаем 91899</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6832 aligncenter" src="./100000-minus-91899-method-2-step-2.png" alt="100000 минус 91899 method 2 step 2" width="321" height="22" srcset="https://spacemath.xyz/wp-content/uploads/2016/05/100000-minus-91899-method-2-step-2.png 321w, https://spacemath.xyz/wp-content/uploads/2016/05/100000-minus-91899-method-2-step-2-300x21.png 300w" sizes="(max-width: 321px) 100vw, 321px" /></p>
+<p>К полученному результату 8100 прибавим единицу, которую мы вычли из 100000</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6833 aligncenter" src="./100000-minus-91899-method-2-step-3.png" alt="100000 минус 91899 method 2 step 3" width="235" height="22" /></p>
+<p>Получили окончательный ответ 8101.</p>
+<hr />
+<p id="method3">Второй способ вычитания заключается в том, чтобы рассматривать цифру, находящуюся в разряде, как самостоятельное число. Решим несколько примеров этим способом.</p>
+<p><strong>Пример 8</strong>. Вычесть из числа 75 число 36</p>
+<p>Будем считать, что каждая цифра в разряде это самостоятельное число.</p>
+<p>Итак, в разряде единиц числа 75 располагается число 5, а в разряде единиц числа 36 располагается число 6. Из пяти не вычесть шести, поэтому берем одну единицу у следующего числа, находящегося в разряде десятков.</p>
+<p>В разряде десятков располагается число 7. Берем от этого числа одну единицу и мысленно дописываем её слева от числа 5</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6856 size-full aligncenter" src="./75-minus-36-step-1.png" alt="75 минус 36 степ 1" width="626" height="198" srcset="./75-minus-36-step-1.png 626w, ./75-minus-36-step-1-300x95.png 300w" sizes="(max-width: 626px) 100vw, 626px" /></p>
+<p>А поскольку от числа 7 взята одна единица, это число уменьшится на одну единицу и обратится в число 6</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6861 size-full aligncenter" src="./75-minus-36-step-2.png" alt="75 минус 36 степ 2" width="624" height="152" srcset="./75-minus-36-step-2.png 624w, ./75-minus-36-step-2-300x73.png 300w" sizes="(max-width: 624px) 100vw, 624px" /></p>
+<p>Теперь в разряде единиц числа 75 располагается число 15, а в разряде единиц числа 36 число 6. Из 15 можно вычесть 6, получится 9. Записываем число 9 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6858 aligncenter" src="./75-minus-36-step-3.png" alt="75 минус 36 степ 3" width="188" height="22" /></p>
+<p>Переходим к следующему числу, находящемуся в разряде десятков. Раньше там располагалось число 7, но мы взяли с этого числа одну единицу, поэтому сейчас там располагается число 6. А в разряде десятков числа 36 располагается число 3. Из 6 можно вычесть 3, получится 3. Записываем число 3 в разряде десятков нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6859 aligncenter" src="./75-minus-36-step-4.png" alt="75 минус 36 степ 4" width="183" height="22" /></p>
+<hr />
+<p><strong>Пример 9</strong>. Вычесть из числа 200 число 84</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6823 aligncenter" src="./200-minus-84-method-2-step-1.png" alt="200 минус 84 method 2 step 1" width="216" height="22" /></p>
+<p>Будем считать, что каждая цифра в разряде это самостоятельно число.</p>
+<p>Итак, в разряде единиц числа 200 располагается ноль, а в разряде единиц числа 84 &#8212; располагается четыре. От нуля не вычесть четыре, поэтому берем одну единицу у следующего числа, находящегося в разряде десятков. Но в разряде десятков тоже ноль. Ноль не сможет дать нам единицу. В таком случае за следующее принимаем число 20.</p>
+<p>Берём одну единицу от числа 20 и мысленно дописываем её слева от нуля, располагающегося в разряде единиц. А поскольку от числа 20 взята одна единица, это число обратится в число 19</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6873 aligncenter" src="./200-minus-84-method-2-step-2.png" alt="200 минус 84 method 2 step 2" width="376" height="282" srcset="./200-minus-84-method-2-step-2.png 376w, ./200-minus-84-method-2-step-2-300x225.png 300w" sizes="(max-width: 376px) 100vw, 376px" /></p>
+<p>Теперь в разряде единиц располагается число 10. Десять минус четыре равно шесть. Записываем число 6 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6825 aligncenter" src="./200-minus-84-method-2-step-3.png" alt="200 минус 84 method 2 step 3" width="225" height="22" /></p>
+<p>Переходим к следующему числу, находящемуся в разряде десятков. Раньше там располагался ноль, но этот ноль вместе со следующей цифрой 2 образовал число 20, от которого мы брали одну единицу. В результате число 20 обратилось в число 19. Получается, что теперь в разряде десятков числа 200 располагается число 9, а в разряде десятков числа 84 располагается число 8. Девять минус восемь равно одному. Записываем число 1 в разряде десятков нашего ответа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6834 aligncenter" src="./200-minus-84-method-2-step-4.png" alt="200 минус 84 method 2 step 4" width="222" height="22" /></p>
+<p>Переходим к следующему числу, находящемуся к разряду сотен. Раньше там располагалось число 2, но это число вместе с цифрой 0 мы приняли за число 20, от которого взяли одну единицу. В результате число 20 обратилось в число 19. Получается, что теперь в разряде сотен числа 200 располагается число 1, а в числе 84 разряд сотен пустой, поэтому мы переносим эту единицу к новому числу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6835 aligncenter" src="./200-minus-84-method-2-step-5.png" alt="" width="217" height="22" /></p>
+<p>Этот метод поначалу кажется сложным и лишенным всякого смысла, но на деле он самый лёгкий. В основном мы будем им пользоваться при сложении и вычитании чисел в столбик.</p>
+<hr />
+<h2 id="yak5" style="text-align: center;">Сложение в столбик</h2>
+<p>Сложение в столбик это школьная операция, которую помнят многие, но не мешает вспомнить её ещё раз. Сложение в столбик происходит по разрядам &#8212; единицы складываются с единицами, десятки с десятками, сотни с сотнями, тысячи с тысячами.</p>
+<p>Рассмотрим несколько примеров.</p>
+<p><strong>Пример 1</strong>. Сложить 61 и 23.</p>
+<p>Сначала записываем первое число, а под ним второе число так, чтобы единицы и десятки второго числа оказались под единицами и десятками первого числа. Всё это соединяем знаком сложения (+) по вертикали:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6425 size-full aligncenter" src="./61-plus-23-ugolkom.png" alt="61 plus 23 уголком" width="64" height="66" /></p>
+<p>Теперь единицы первого числа складываем с единицами второго числа, а десятки первого числа складываем с десятками второго числа:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6427 size-full aligncenter" src="./61-plus-23-ugolkom-reshenie.png" alt="61 plus 23 уголком решение" width="64" height="96" /></p>
+<p>Получили 61 + 23 = 84.</p>
+<hr />
+<p><strong>Пример 2.</strong> Сложить 108 и 60</p>
+<p>Записываем числа в столбик. Единицы под единицами, десятки под десятками:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6836 aligncenter" src="./108-plyus-60-step-1.png" alt="108 плюс 60 step 1" width="87" height="70" /></p>
+<p>Теперь складываем единицы первого числа с единицами второго числа, десятки первого числа с десятками второго числа, сотни первого числа с сотнями второго числа. Но сотня есть только у первого числа 108. В этом случае цифра 1 из разряда сотен добавляется к новому числу (нашему ответу). Как говорили в школе &#171;сносится&#187;:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6837 aligncenter" src="./108-plyus-60-step-2.png" alt="" width="87" height="102" /></p>
+<p>Видно, что мы снесли цифру 1 к нашему ответу.</p>
+<p>Когда речь идёт о сложении, нет разницы в каком порядке записывать числа. Наш пример вполне можно было записать и так:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6838 aligncenter" src="./108-plyus-60-step-2-perestavili-slagaemyem-mestami.png" alt="108 плюс 60 step 2 переставили слагаемыем местами" width="87" height="102" /></p>
+<p>Первая запись, где число 108 было наверху, более удобнее для вычисления. Человек вправе выбирать любую запись, но обязательно нужно помнить, что единицы надо записывать строго под единицами, десятки под десятками, сотни под сотнями. Другими словами, следующие записи будут неправильными:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6839 aligncenter" src="./60-plus-108-error-notes.png" alt="60 plus 108 error notes" width="394" height="151" srcset="./60-plus-108-error-notes.png 394w, ./60-plus-108-error-notes-300x115.png 300w" sizes="(max-width: 394px) 100vw, 394px" /></p>
+<p>Если вдруг при сложении соответствующих разрядов получится число, которое не помещается в разряд нового числа, то необходимо записать одну цифру из младшего разряда, а оставшуюся перенести на следующий разряд.</p>
+<p>Речь в данном случае идет о переполнении разряда, о котором мы говорили ранее. Например, при сложении 26 и 98 получается 124. Давайте посмотрим, как это получилось.</p>
+<p>Записываем числа в столбик. Единицы под единицами, десятки под десятками:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-4665 size-full aligncenter" src="./26-plyus-98.png" alt="26 плюс 98" width="62" height="67" /></p>
+<p>Складываем единицы первого числа с единицами второго числа: 6+8=14. Получили число 14, которое не вместится в разряд единиц нашего ответа. В таких случаях мы сначала вытаскиваем из 14 цифру, находящуюся в разряде единиц и записываем её в разряде единиц нашего ответа. В разряде единиц числа 14 располагается цифра 4. Записываем эту цифру в разряде единиц нашего ответа:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6788 size-full aligncenter" src="./26-plyus-96-shag-2.png" alt="26 плюс 96 шаг 2" width="71" height="99" />А куда девать цифру 1 из числа 14? Здесь начинается самое интересное. Эту единицу мы переносим на следующий разряд. Она будет добавлена к разряду десятков нашего ответа.</p>
+<p>Складываем десятки с десятками. 2 плюс 9 равно 11, плюс добавляем единицу, которая досталась нам от числа 14. Добавив к 11 нашу единицу, мы получим число 12, которое и запишем в разряде десятков нашего ответа. Поскольку это конец решения, здесь уже не стоит вопрос о том, вместится ли полученный ответ в разряд десятков. 12 мы записываем целиком, образуя окончательный ответ.</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6789 size-full aligncenter" src="./26-plyus-96-shag-3.png" alt="26 плюс 96 шаг 3" width="71" height="99" /></p>
+<p>Получили ответ 124.</p>
+<p>Говоря традиционным методом сложения, при сложении 6 и 8 единиц получилось 14 единиц. 14 единиц это 4 единицы и 1 десяток. Четыре единицы мы записали в разряде единиц, а один десяток отправили на следующий разряд (к разрядам десятков). Затем сложив 2 десятка и 9 десятков, мы получили 11 десятков, плюс добавили 1 десяток, который остался при сложении единиц. В результате получили 12 десятков. Эти двенадцать десятков мы записали целиком, образуя окончательный ответ 124.</p>
+<p>Этот простенький пример демонстрирует школьную ситуацию, в которой говорят <span style="color: #000000;"><em>&#171;четыре пишем, один в уме&#187;</em></span>. Если вы будете решать примеры и у вас после сложения разрядов останется цифра, которую надо держать в уме, запишите её над тем разрядом, куда она будет потом добавлена. Это позволит вам не забыть о ней:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6790 size-full aligncenter" src="./26-plyus-96-shag-4.png" alt="26 плюс 96 шаг 4" width="66" height="131" /></p>
+<hr />
+<p><strong>Пример 2</strong>. Сложить числа 784 и 548</p>
+<p>Записываем числа в столбик. Единицы под единицами, десятки под десятками, сотни под сотнями:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6840 aligncenter" src="./784-i-548-shag-2.png" alt="784 и 548 шаг 2" width="89" height="69" /></p>
+<p>Складываем единицы первого числа с единицами второго числа: 4+8=12. Число 12 не вмещается в разряд единиц нашего ответа, поэтому мы из 12 вынимаем цифру 2 из разряда единиц и записываем её в разряд единиц нашего ответа. А цифру 1 переносим на следующий разряд:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6841 aligncenter" src="./784-i-548-shag-3.png" alt="784 и 548 шаг 3" width="85" height="133" /></p>
+<p>Теперь складываем десятки. Складываем 8 и 4 плюс единица, которая осталась от предыдущей операции (единица осталась от 12, на рисунке она выделена синим цветом). Складываем 8+4+1=13. Число 13 не вместится в разряд десятков нашего ответа, поэтому мы запишем цифру 3 в разряде десятков, а единицу перенесём на следующий разряд:</p>
+<p><img loading="lazy" decoding="async" class="wp-image-6842 size-full aligncenter" src="/784-i-548-shag-4.png" alt="784 и 548 шаг 4" width="85" height="133" /></p>
+<p>Теперь складываем сотни. Складываем 7 и 5 плюс единица, которая осталась от предыдущей операции: 7+5+1=13. Записываем число 13 в разряд сотен:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6793 aligncenter" src="./784-i-548-shag-5.png" alt="784 и 548 шаг 5" width="97" height="133" /></p>
+<hr />
+<h2 id="yak6" style="text-align: center;">Вычитание в столбик</h2>
+<p><strong>Пример 1</strong>. Вычтем из числа 69 число 53.</p>
+<p>Запишем числа в столбик. Единицы под единицами, десятки под десятками. Затем вычитаем по разрядам. Из единиц первого числа вычитаем единицы второго числа. Из десятков первого числа вычитаем десятки второго числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6845 aligncenter" src="./69-minus-53.png" alt="69 minus 53" width="64" height="101" /></p>
+<p>Получили ответ 16.</p>
+<hr />
+<p><strong>Пример 2.</strong> Найти значение выражения 95 − 26</p>
+<p>Записываем в столбик данное выражение:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6847 aligncenter" src="./95-minus-26-step-1.png" alt="95 minus 26 step 1" width="57" height="69" /></p>
+<p>Разряд единиц числа 95 содержит 5 единиц, а разряд единиц числа 26 содержит 6 единиц. От пяти единиц нельзя вычесть шесть единиц, поэтому берем один десяток у разряда десятков. Этот десяток и имеющиеся пять единиц вместе составляют 15 единиц. Из 15 единиц можно вычесть 6 единиц, получится 9 единиц. Записываем цифру 9 в разряде единиц нашего ответа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6848 aligncenter" src="./95-minus-26-step-2-1.png" alt="95 minus 26 step 2" width="57" height="100" /></p>
+<p>Теперь вычитаем десятки. Разряд десятков числа 95 раньше содержал 9 десятков, но мы взяли с этого разряда один десяток, и сейчас он содержит 8 десятков. А разряд десятков числа 26 содержит 2 десятка. Из восьми десятков можно вычесть два десятка, получится шесть десятков. Записываем цифру 6 в разряде десятков нашего ответа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6849 aligncenter" src="./95-minus-26-step-3-1.png" alt="95 minus 26 step 3" width="57" height="100" /></p>
+<p>Воспользуемся <a href="#method3">нестандартным способом вычитания</a> при котором каждая цифра, входящая в число, рассматривается как отдельное число. При вычитании больших чисел в столбик этот способ очень удобен.</p>
+<p>В разряде единиц уменьшаемого располагается число 5. А в разряде единиц вычитаемого число 6. Из пятёрки не вычесть шестёрку. Поэтому берем одну единицу у числа 9. Взятая единица мысленно дописывается слева от пятёрки. А поскольку у числа 9 мы взяли одну единицу, это число уменьшится на одну единицу:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6430" src="./95-minus-26-zanimaem-edinitsu-naglyadnyj-risunok.png" alt="95 минус 26 занимаем единицу наглядный рисунок" width="659" height="202" srcset="./95-minus-26-zanimaem-edinitsu-naglyadnyj-risunok.png 659w, .95-minus-26-zanimaem-edinitsu-naglyadnyj-risunok-300x92.png 300w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>В результате пятёрка обращается в число 15. Теперь можно из 15 вычесть 6. Получается 9. Записываем число 9 в разряде единиц нашего ответа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6431 aligncenter" src="./95-minus-26-step-2.png" alt="95 минус 26 step 2" width="160" height="294" /></p>
+<p>Переходим к разряду десятков. Раньше там располагалось число 9, но поскольку мы взяли у него одну единицу оно обратилось в число 8. В разряде десятков второго числа располагается число 2. Восемь минус два будет шесть. Записываем число 6 в разряде десятков нашего ответа:</p>
+<p style="text-align: left;"><img loading="lazy" decoding="async" class="wp-image-6433 size-full aligncenter" src="./95-minus-26-step-3.png" alt="95 минус 26 step 3" width="160" height="294" /></p>
+<hr />
+<p><strong>Пример 3.</strong> Найдем значение выражения <span style="color: #000000;">2412 − 2317</span></p>
+<p>Записываем в столбик данное выражение:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6434 aligncenter" src="./2412-minus-2317-ugolkom.png" alt="2412 minus 2317 уголком" width="100" height="71" /></p>
+<p>В разряде единиц числа 2412 располагается число 2, а в разряде единиц числа 2317 располагается число 7. Из двойки не вычесть семёрку, поэтому берем единицу у следующего числа 1. Взятую единицу мысленно дописываем слева от двойки:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-6435" src="./2412-minus-2317-ugolkom-step-1.png" alt="2412 minus 2317 уголком step 1" width="658" height="187" srcset="./2412-minus-2317-ugolkom-step-1.png 658w, ./2412-minus-2317-ugolkom-step-1-300x85.png 300w" sizes="(max-width: 658px) 100vw, 658px" /></p>
+<p>В результате двойка обращается в число 12. Теперь можно из 12 вычесть 7. Получается 5. Записываем цифру 5 в разряде единиц нашего ответа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6436 aligncenter" src="./2412-minus-2317-ugolkom-step-2.png" alt="2412 minus 2317 уголком step 2" width="248" height="269" /></p>
+<p>Переходим к десяткам. В разряде десятков числа 2412 раньше располагалось число 1, но поскольку мы взяли у него одну единицу, оно обратилось в 0. А в разряде десятков числа 2317 располагается число 1. Из нуля не вычесть единицу. Поэтому берем одну единицу у следующего числа 4. Взятую единицу мысленно дописываем слева от нуля. А поскольку у числа 4 мы взяли одну единицу, это число уменьшится на одну единицу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6439 aligncenter" src="./2412-minus-2317-ugolkom-step-3.png" alt="2412 minus 2317 уголком step 3" width="658" height="269" srcset="./2412-minus-2317-ugolkom-step-3.png 658w, ./2412-minus-2317-ugolkom-step-3-300x123.png 300w" sizes="(max-width: 658px) 100vw, 658px" /></p>
+<p>В результате ноль обращается в число 10. Теперь можно из 10 вычесть 1. Получается 9. Записываем цифру 9 в разряде десятков нашего ответа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6440 aligncenter" src="./2412-minus-2317-ugolkom-step-4.png" alt="2412 minus 2317 уголком step 4" width="247" height="268" /></p>
+<p>В разряде сотен числа 2412 раньше располагалось число 4, но сейчас там располагается число 3. В разряде сотен числа 2317 также располагается число 3. Три минус три равно нулю. То же самое и с разрядами тысяч в обоих числах. Два минус два равно нулю. А если разность старших разрядов равна нулю, то этот ноль не записывают. Поэтому окончательным ответом будет число 95.</p>
+<hr />
+<p><strong>Пример 4</strong>. Найти значение выражения <span style="color: #000000;">600 − 8</span></p>
+<p>Запишем в столбик данное выражение:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6850 aligncenter" src="./600-minus-8.png" alt="600 minus 8" width="81" height="67" /></p>
+<p>В разряде единиц числа 600 располагается ноль, а в разряде единиц числа 8 само это число. Из нуля не вычесть восьмерку, поэтому берем единицу у следующего числа. Но следующее число это тоже ноль. Тогда за следующее число принимаем число 60. Берем одну единицу у этого числа и мысленно дописываем её слева от нуля. А поскольку у числа 60 мы взяли одну единицу, это число уменьшится на одну единицу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6851 aligncenter" src="./600-minus-8-step-2.png" alt="600 minus 8 step 2" width="658" height="187" srcset="./600-minus-8-step-2.png 658w, ./600-minus-8-step-2-300x85.png 300w" sizes="(max-width: 658px) 100vw, 658px" /></p>
+<p>Теперь в разряде единиц располагается число 10. Из 10  можно вычесть 8, получится 2. Записываем число 2 в разряде единиц нового числа:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6852 aligncenter" src="./600-minus-8-step-3.png" alt="600 minus 8 step 3" width="81" height="98" /></p>
+<p>Переходим к следующему числу, находящемуся в разряде десятков. В разряде десятков раньше располагался ноль, но сейчас там располагается число 9, а во втором числе разряд десятков отсутствует. Поэтому число 9 переносится к новому числу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6862 aligncenter" src="./600-minus-8-step-4.png" alt="600 minus 8 step 4" width="81" height="98" /></p>
+<p>Переходим к следующему числу, находящемуся в разряде сотен. В разряде сотен раньше располагалось число 6, но сейчас там располагается число 5, а во втором числе разряд сотен отсутствует. Поэтому число 5 переносится к новому числу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6863 aligncenter" src="./600-minus-8-step-5.png" alt="600 minus 8 step 5" width="80" height="98" /></p>
+<hr />
+<p><strong>Пример 5.</strong> Найти значение выражения <span style="color: #000000;">10000 − 999</span></p>
+<p>Запишем в столбик данное выражение:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6864 aligncenter" src="/10000-minus-999-step-1.png" alt="10000 минус 999 степ 1" width="116" height="69" /></p>
+<p>В разряде единиц числа 10000 располагается 0, а в разряде единиц числа 999 располагается число 9. Из нуля не вычесть девятку, поэтому берем одну единицу у следующего числа, находящегося в разряде десятков. Но в следующем разряде тоже ноль. Тогда за следующее число принимаем 1000 и берем от этого числа единицу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6870 aligncenter" src="./10000-minus-999-step-2.png" alt="10000 минус 999 степ 2" width="618" height="223" srcset="./10000-minus-999-step-2.png 618w, ./10000-minus-999-step-2-300x108.png 300w" sizes="(max-width: 618px) 100vw, 618px" /></p>
+<p>Следующее число в данном случае было 1000. Взяв у него единицу, мы обратили его в число 999. А взятую единицу дописали слева от нуля.</p>
+<p>Дальнейшее вычисление не составило особого труда. Десять минус девять равно одному. Вычитание чисел, находящихся в разряде десятков обоих чисел дало ноль. Вычитание чисел, находящихся в разряде сотен обоих чисел тоже дало ноль. А девятка из разряда тысяч была перенесена к новому числу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6869 aligncenter" src="./10000-minus-999-step-3.png" alt="10000 минус 999 степ 3" width="116" height="100" /></p>
+<hr />
+<p><strong>Пример 6</strong>. Найти значение выражения <span style="color: #000000;">12301­ − 9046</span></p>
+<p>Запишем в столбик данное выражение:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6866 aligncenter" src="./12301-minus-9046.png" alt="12301 минус 9046" width="116" height="67" /></p>
+<p>В разряде единиц числа 12301 располагается число 1, а в разряде единиц числа 9046 располагается число 6. Из единицы не вычесть шесть, поэтому берем одну единицу у следующего числа, находящегося в разряде десятков. Но в следующем разряде располагается ноль. Ноль ничего нам дать не сможет. Тогда за следующее число принимаем 1230 и берем от этого числа единицу:</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-6868 aligncenter" src="./12301-minus-9046-step-2.png" alt="" width="635" height="225" srcset="./12301-minus-9046-step-2.png 635w, ./12301-minus-9046-step-2-300x106.png 300w" sizes="(max-width: 635px) 100vw, 635px" /></p>
+<p>Следующее число в данном случае было 1230. Взяв у него единицу, мы обратили его в число 1229. А взятую единицу мысленно дописали слева от единицы, находящейся в разряде единиц.</p>
+<p>Дальнейшее вычисление не составило особого труда. Одиннадцать минус шесть равно пять. Вычитание чисел, находящихся в разряде десятков обоих чисел дало число 5. Вычитание чисел, находящихся в разряде сотен обоих чисел дало число 2. Вычитание чисел, находящихся в разряде тысяч обоих чисел дало число 3.</p>
+<hr />
+<h2 id="yak7" style="text-align: center;">Задания для самостоятельного решения</h2>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 1.</span> Выполните сложение:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-1.png" /></div>
+<div class="ex ex1">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-1-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex1">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 2.</span> Выполните сложение:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-2.png" /></div>
+<div class="ex ex2">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-2-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex2">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 3.</span> Выполните сложение:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-3-zadanie.png" /></div>
+<div class="ex ex3">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-3-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex3">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 4.</span> Выполните сложение:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-4-zadanie.png" /></div>
+<div class="ex ex4">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-4-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex4">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 5.</span> Выполните сложение:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-5-zadanie.png" /></div>
+<div class="ex ex5">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-5-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex5">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 6.</span> Выполните сложение:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-5-zadanie-1.png" /></div>
+<div class="ex ex6">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-5-reshenie-1.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex6">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 7.</span> Выполните сложение:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-7-zadanie.png" /></div>
+<div class="ex ex7">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-7-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex7">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 8.</span> Выполните вычитание:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-8-zadanie.png" /></div>
+<div class="ex ex8">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-8-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex8">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 9.</span> Выполните вычитание:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-9-zadanie.png" /></div>
+<div class="ex ex9">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="/razryady-zadanie-9-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex9">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 10.</span> Выполните вычитание:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-10-zadanie.png" /></div>
+<div class="ex ex10">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-10-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex10">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 11.</span> Выполните вычитание:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-11-zadanie.png" /></div>
+<div class="ex ex11">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-11-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex11">Показать решение</a></div>
+</div>
+<div class="b-test-work">
+<div class="b-test-work-description"><span class="b-test-work-description_strong">Задание 12.</span> Выполните вычитание:</div>
+<div class="b-test-work-example"><img decoding="async" class="aligncenter" src="./razryady-zadanie-12-zadanie.png" /></div>
+<div class="ex ex12">
+<div class="decision-text">Решение:</div>
+<div class="decision-img"><img decoding="async" src="./razryady-zadanie-12-reshenie.png" /></div>
+</div>
+<div class="b-test-work-show-example"><a class="show_hide" href="#" rel=".ex12">Показать решение</a></div>
+</div>
+<div id="kpm-root" class="kpm_LTR notranslate" translate="no"></div>
+<hr/>
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+   $('.show_hide').showHide({			 
+		speed: 500,  
+		easing: '',  
+		changeText: 1, 
+		showText: 'Показать решение',
+		hideText: 'Скрыть решение' 
+					 
+	}); 
+
+});
+
+</script>
+
+</body>
+</html>
